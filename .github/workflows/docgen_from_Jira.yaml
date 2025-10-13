@@ -13,30 +13,28 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: 3.9
+          python-version: "3.11"
+
+      - name: Set up pandoc
+        uses: pandoc/actions/setup@v1
 
       - name: Python install
         run: |
           python -m pip install --upgrade pip
-          python -m pip install "lander<2.0.0"
-
-      - name: condaenv
-        run: |
-          conda init bash
-          conda create --name docsteady-env docsteady -c lsst-dm -c conda-forge
-        shell: bash
+          python -m pip install -r requirements.txt
 
       - name: docugen
         env:
+          ZEPHYR_TOKEN: ${{ secrets.ZEPHYR_TOKEN }}
           JIRA_USER: ${{ secrets.JIRA_USER }}
           JIRA_PASSWORD: ${{ secrets.JIRA_PASSWORD }}
         run: |
-          source ${CONDA}/bin/activate docsteady-env
           docsteady  --namespace DM generate-tpr LVV-P128  DMTR-441.tex
         shell: bash
 
       - name: Create commit
         run: |
+          rm tpr_model.json
           git config user.name $GITHUB_ACTOR
           git config user.email $GITHUB_ACTOR@users.noreply.github.com
           git add attachments jira_imgs
