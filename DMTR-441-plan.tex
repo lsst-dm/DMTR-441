@@ -1,38 +1,110 @@
-\documentclass[DM,lsstdraft,toc]{lsstdoc}
+% generated from JIRA project LVV
+% using template at /opt/hostedtoolcache/Python/3.11.13/x64/lib/python3.11/site-packages/docsteady/templates/tpnoresult.latex.jinja2.
+% using docsteady version 3.0.8
+% Please do not edit -- update information in Jira instead
+\documentclass[DM,lsstdraft,STR,toc]{lsstdoc}
 \usepackage{geometry}
 \usepackage{longtable,booktabs}
 \usepackage{enumitem}
 \usepackage{arydshln}
+\usepackage{attachfile}
+\usepackage{array}
+\usepackage{dashrule}
 
-\input{meta.tex}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
 
+\input meta.tex
+
+\newcommand{\attachmentsUrl}{https://github.com/\gitorg/\lsstDocType-\lsstDocNum/blob/\gitref/attachments}
 \providecommand{\tightlist}{
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\setcounter{tocdepth}{4}
 
 \begin{document}
 
 \def\milestoneName{LDM-503-19 (All P1a and 1b DM requirements verified)}
-\def\milestoneId{LVV-P128}
-\def\product{Data Management}
+\def\milestoneId{}
+\def\product{Acceptance}
 
 \setDocCompact{true}
 
-\title{LVV-P128 LDM-503-19 (All P1a and 1b DM requirements verified) Test Plan }
+\title{LVV-P128: LDM-503-19 (All P1a and 1b DM requirements verified) Test Plan }
 \setDocRef{\lsstDocType-\lsstDocNum}
-\date{\vcsDate}
-\author{Jeffrey Carlin}
+\date{ 2025-10-13 }
+\author{ Jeffrey Carlin }
 
 \input{history_and_info.tex}
 
+
 \setDocAbstract{
-This is a stub test report created from a template.
-The content is being prepared.
+This is the test plan for
+\textbf{ LDM-503-19 (All P1a and 1b DM requirements verified)},
+an LSST milestone pertaining to the Data Management Subsystem.\\
+This document is based on content automatically extracted from the Jira test database on \docDate.
+The most recent change to the document repository was on \vcsDate.
 }
+
 
 \maketitle
 
 \section{Introduction}
-Use the GitHub Actions workflow ``docgen from Jira'' to generate this document's content from Jira.
+\label{sect:intro}
+
+
+\subsection{Objectives}
+\label{sect:objectives}
+
+ This DM acceptance test campaign will verify all DM priority 1a and 1b
+requirements that have not been verified as part of prior testing and
+milestones.
+
+
+
+\subsection{System Overview}
+\label{sect:systemoverview}
+
+ This test campaign is intended to verify that the DM system satisfies
+all of the priority 1a and 1b requirements outlined in the Data
+Management System Requirements (DMSR;~
+\protect\phantomsection\label{isPasted}\href{https://lse-61.lsst.io/}{LSE-61}
+), ensuring that we are progressing toward readiness for LSSTCam on-sky
+observing. Additional DMSR requirements (priorities 2 and 3) will be
+verified in later Acceptance Test Campaigns.\\
+\strut \\
+\textbf{Applicable Documents:}\\
+\citeds{LSE-61}: Data Management System (DMS) Requirements\\
+\citeds{LDM-503} Data Management Test Plan\\
+\citeds{LDM-639}: Data Management Acceptance Test Specification\\
+\strut \\
+Tests in this campaign will use data products and artifacts from Data
+Preview 0.2, which consists of DESC Data Challenge 2 (DC2) simulated
+data reprocessed using the LSST Science Pipelines, on-sky data from
+auxTel and LSSTComCam imaging campaigns, precursor data from
+Subaru+HyperSuprime-Cam (HSC), and camera test-stand data, when
+appropriate.
+
+
+\subsection{Document Overview}
+\label{sect:docoverview}
+
+This document was generated from Jira, obtaining the relevant information from the
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testPlan/LVV-P128}{LVV-P128}
+~Jira Test Plan and related Test Cycles (
+\href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCycle/LVV-R293}{LVV-R293}
+).
+
+Section \ref{sect:intro} provides an overview of the test campaign, the system under test (\product{}),
+the applicable documentation, and explains how this document is organized.
+Section \ref{sect:testplan} provides additional information about the test plan, like for example the configuration
+used for this test or related documentation.
+Section \ref{sect:personnel} describes the necessary roles and lists the individuals assigned to them.
+
+Section \ref{sect:overview} provides a summary of the test results, including an overview in Table \ref{table:summary},
+an overall assessment statement and suggestions for possible improvements.
+Section \ref{sect:detailedtestresults} provides detailed results for each step in each test case.
+
+The current status of test plan \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testPlan/LVV-P128}{LVV-P128} in Jira is \textbf{ Approved }.
 
 \subsection{References}
 \label{sect:references}
@@ -40,5 +112,350 @@ Use the GitHub Actions workflow ``docgen from Jira'' to generate this document's
 \bibliography{lsst,refs,books,refs_ads,local}
 
 
-\input{appendix}
+\newpage
+\section{Test Plan Details}
+\label{sect:testplan}
+
+
+\subsection{Data Collection}
+
+  Observing is not required for this test campaign.
+
+\subsection{Verification Environment}
+\label{sect:hwconf}
+  Most testing will be performed using the Rubin Science Platform (RSP)
+and the development cluster at the USDF. All tests will use the most
+recent available version of the Pipelines.
+
+  \subsection{Entry Criteria}
+  None
+
+  \subsection{Exit Criteria}
+  None
+
+
+\subsection{Related Documentation}
+
+Docushare collection where additional relevant documentation can be found:
+
+\begin{itemize}
+\item None
+\end{itemize}
+
+
+
+\subsection{PMCS Activity}
+
+Primavera milestones related to the test campaign:
+None
+
+
+\newpage
+\section{Personnel}
+\label{sect:personnel}
+
+The personnel involved in the test campaign is shown in the following table.
+
+{\small
+\begin{longtable}{p{3cm}p{3cm}p{3cm}p{6cm}}
+\hline
+\multicolumn{2}{r}{T. Plan \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testPlan/LVV-P128}{LVV-P128} owner:} &
+\multicolumn{2}{l}{\textbf{ Jeffrey Carlin } }\\\hline
+\multicolumn{2}{r}{T. Cycle \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCycle/LVV-R293}{LVV-R293} owner:} &
+\multicolumn{2}{l}{\textbf{
+Jeffrey Carlin }
+} \\\hline
+\textbf{Test Cases} & \textbf{Assigned to} & \textbf{Executed by} & \textbf{Additional Test Personnel} \\ \hline
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3833}{LVV-E3833}
+& {\small Jeffrey Kantor } & {\small Cristián Silva } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small Josh Hoblitt (Rubin Obs), Renata Frez (FIU/AmLight), Matt Kollross
+(NCSA) }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3834}{LVV-E3834}
+& {\small Jeffrey Kantor } & {\small Cristián Silva } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small Josh Hoblitt (Rubin Obs), Renata Frez (FIU/AmLight), Matt Kollross
+(NCSA) }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3835}{LVV-E3835}
+& {\small Jeffrey Kantor } & {\small Cristián Silva } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small Jeff Kantor (LSST) }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3837}{LVV-E3837}
+& {\small Jeffrey Kantor } & {\small Cristián Silva } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small Ron Lambert (LSST), Guido Maulen (LSST) }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3838}{LVV-E3838}
+& {\small Jeffrey Kantor } & {\small Cristián Silva } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small Ron Lambert (LSST) }
+\medskip
+\end{minipage}
+\\ \hline
+\end{longtable}
+}
+
+\newpage
+
+\section{Test Campaign Overview}
+\label{sect:overview}
+
+\subsection{Summary}
+\label{sect:summarytable}
+
+{\small
+\begin{longtable}{p{2cm}cp{2.3cm}p{8.6cm}p{2.3cm}}
+\toprule
+\multicolumn{2}{r}{ T. Plan \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testPlan/LVV-P128}{LVV-P128}:} &
+\multicolumn{2}{p{10.9cm}}{\textbf{ LDM-503-19 (All P1a and 1b DM requirements verified) }} & Approved \\\hline
+\multicolumn{2}{r}{ T. Cycle \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCycle/LVV-R293}{LVV-R293}:} &
+\multicolumn{2}{p{10.9cm}}{\textbf{ LDM-503-19 (All P1a and 1b DM requirements verified) }} & In Progress \\\hline
+\textbf{Test Cases} &  \textbf{Ver.}  \\\toprule
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3833}{LVV-E3833}
+&  1.0(d)
+\\
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3834}{LVV-E3834}
+&  1.0(d)
+\\
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3835}{LVV-E3835}
+&  1.0(d)
+\\
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3837}{LVV-E3837}
+&  1.0(d)
+\\
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3838}{LVV-E3838}
+&  1.0(d)
+\\
+\\\hline
+\caption{Test Campaign Summary}
+\label{table:summary}
+\end{longtable}
+}
+
+\subsection{Overall Assessment}
+\label{sect:overallassessment}
+
+None
+
+\subsection{Recommended Improvements}
+\label{sect:recommendations}
+
+\newpage
+\section{Detailed Tests}
+\label{sect:detailedtests}
+
+\subsection{Test Cycle LVV-R293 }
+
+Open test cycle {\it \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/testPlayer/LVV-R293}{LDM-503-19 (All P1a and 1b DM requirements verified)}} in Jira.
+
+Test Cycle name: LDM-503-19 (All P1a and 1b DM requirements verified)\\
+Status: In Progress
+
+Test campaign supporting milestone LDM-503-19 -\/- all P1a and 1b
+requirements verified.
+
+\subsubsection{Software Version/Baseline}
+Not provided.
+
+\subsubsection{Configuration}
+Not provided.
+
+\subsubsection{Test Cases in LVV-R293 Test Cycle}
+
+\paragraph{ LVV-E3833 - Verify implementation of Base to Archive Network Availability }\mbox{}\\
+
+Version \textbf{1.0(d)}.
+Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3833}{\textit{ LVV-E3833 } }
+test case in Jira.
+
+Verify the availability of the Base to Archive Network communications by
+demonstrating that it meets or exceeds a mean time between failures,
+measured over a 1-yr period of MTBF \textgreater{} baseToArchNetMTBF
+(180{[}day{]})
+
+\textbf{ Preconditions}:\\
+\begin{enumerate}
+\tightlist
+\item
+  Archiver/Forwarders are configured at Base, connected to REUNA DWDM,
+  loaded with simulated or pre-cursor data, running on end node
+  computers that are the production hardware or equivalent to it.
+\item
+  Archiver/Forwarder receivers or other capability is on configured at
+  LDF, connected to Base - Archive Network, running on end node
+  computers that are the production hardware or equivalent to it.
+\item
+  At least 6 months of historical monitoring data on this link is
+  available.
+\item
+  As-built documentation for all of the above is available.
+\end{enumerate}
+
+NOTE: This test will be repeated at increasing data volumes as
+additional observatory capabilities (e.g. ComCAM, FullCam) become
+available. Final verification will be tested at full operational volume.
+After the initial test, the corresponding verification elements will be
+flagged as ``Requires Monitoring'' such that those requirements will be
+closed out as having been verified but will continue to be monitored
+throughout commissioning to ensure they do not drop out of compliance.
+This will also be monitored for end to end Summit - Data Facility
+transfers during Commissioning.
+
+Final comment:\\None
+
+
+Detailed steps :
+
+\paragraph{ LVV-E3834 - Verify implementation of Base to Archive Network }\mbox{}\\
+
+Version \textbf{1.0(d)}.
+Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3834}{\textit{ LVV-E3834 } }
+test case in Jira.
+
+Verify that the data acquired by a DAQ can be transferred within the
+required time, i.e. verify that link is capable of transferring image
+for prompt processing in oArchiveMaxTransferTime = 5{[}second{]}, i.e.
+at or exceeding rates specified in \citeds{LDM-142}.
+
+\textbf{ Preconditions}:\\
+\begin{enumerate}
+\tightlist
+\item
+  Archiver/Forwarders are configured at Base, connected to REUNA DWDM,
+  loaded with simulated or pre-cursor data, running on end node
+  computers that are the production hardware or equivalent to it.
+\item
+  Archiver/Forwarder receivers or other capability is on configured at
+  LDF, connected to Base - Archive Network, running on end node
+  computers that are the production hardware or equivalent to it.
+\item
+  As-built documentation for all of the above is available.
+\end{enumerate}
+
+NOTE: This test will be repeated at increasing data volumes as
+additional observatory capabilities (e.g. ComCAM, FullCam) become
+available. ~Final verification will be tested at full operational
+volume. After the initial test, the corresponding verification elements
+will be flagged as ``Requires Monitoring'' such that those requirements
+will be closed out as having been verified but will continue to be
+monitored throughout commissioning to ensure they do not drop out of
+compliance. This will also be monitored for end to end Summit - Data
+Facility transfers during Commissioning.
+
+Final comment:\\None
+
+
+Detailed steps :
+
+\paragraph{ LVV-E3835 - Verify implementation of Summit to Base Network Ownership and Operation }\mbox{}\\
+
+Version \textbf{1.0(d)}.
+Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3835}{\textit{ LVV-E3835 } }
+test case in Jira.
+
+Verify Summit to Base Network Ownership and Operation by LSST and/or the
+operations entity by inspection of construction and operations contracts
+and Indefeasible Rights.
+
+\textbf{ Preconditions}:\\
+\begin{enumerate}
+\tightlist
+\item
+  As-built documentation for all of the above contracts and IRUs is
+  available.
+\end{enumerate}
+
+Final comment:\\None
+
+
+Detailed steps :
+
+\paragraph{ LVV-E3837 - Verify implementation of Summit to Base Network Reliability }\mbox{}\\
+
+Version \textbf{1.0(d)}.
+Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3837}{\textit{ LVV-E3837 } }
+test case in Jira.
+
+Verify the reliability of the summit to base network by demonstrating
+reconnection and recovery to transfer of data at or exceeding rates
+specified in \citeds{LDM-142} following a cut in network connection, within MTTR
+specification. The network operator will provide MTTR data on links
+during commissioning and operations.\\
+\strut \\
+
+\textbf{ Preconditions}:\\
+\begin{enumerate}
+\tightlist
+\item
+  PMCS DMTC-7400-2400 Complete
+\item
+  As-built documentation for Summit - Base Network is available.
+\end{enumerate}
+
+NOTE: After the initial test, the corresponding verification elements
+will be flagged as ``Requires Monitoring'' such that those requirements
+will be closed out as having been verified but will continue to be
+monitored throughout commissioning to ensure they do not drop out of
+compliance. This will also be monitored for end to end Summit - Data
+Facility transfers during Commissioning.
+
+Final comment:\\None
+
+
+Detailed steps :
+
+\paragraph{ LVV-E3838 - Verify implementation of Summit to Base Network Availability }\mbox{}\\
+
+Version \textbf{1.0(d)}.
+Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3838}{\textit{ LVV-E3838 } }
+test case in Jira.
+
+Verify the availability of Summit to Base Network by demonstrating that
+the mean time between failures is less than summToBaseNetMTBF (90 days)
+over 1 year.
+
+\textbf{ Preconditions}:\\
+\begin{enumerate}
+\tightlist
+\item
+  PMCS DMTC-7400-2400 Complete.
+\item
+  6 months of historical availability data for this link is available.
+\item
+  perSonar installed in Summit and publishing statistics to MadDash.
+\item
+  As-built documentation for all of the above is available.
+\end{enumerate}
+
+NOTE: After the initial test, the corresponding verification elements
+will be flagged as ``Requires Monitoring'' such that those requirements
+will be closed out as having been verified but will continue to be
+monitored throughout commissioning to ensure they do not drop out of
+compliance. This will also be monitored for end to end Summit - Data
+Facility transfers during Commissioning.
+
+Final comment:\\None
+
+
+Detailed steps :
+
+
+
+\input{appendix.tex}
 \end{document}
