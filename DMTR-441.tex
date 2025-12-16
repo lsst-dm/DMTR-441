@@ -1,6 +1,6 @@
 % generated from JIRA project LVV
 % using template at /opt/hostedtoolcache/Python/3.11.14/x64/lib/python3.11/site-packages/docsteady/templates/tpr.latex.jinja2.
-% using docsteady version 3.1.0
+% using docsteady version 3.1.4
 % Please do not edit -- update information in Jira instead
 \documentclass[DM,lsstdraft,STR,toc]{lsstdoc}
 \usepackage{geometry}
@@ -38,7 +38,7 @@
 
 \title{LVV-P128: LDM-503-19 (All P1a and 1b DM requirements verified) Test Plan and Report}
 \setDocRef{\lsstDocType-\lsstDocNum}
-\date{ 2025-10-20 }
+\date{ 2025-12-16 }
 \author{ Jeffrey Carlin }
 
 \input{history_and_info.tex}
@@ -98,6 +98,7 @@ appropriate.
 This document was generated from Jira, obtaining the relevant information from the
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testPlan/LVV-P128}{LVV-P128}
 ~Jira Test Plan and related Test Cycles (
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/testPlayer/LVV-R155}{LVV-R155}
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/testPlayer/LVV-R293}{LVV-R293}
 ).
 
@@ -167,20 +168,73 @@ The personnel involved in the test campaign is shown in the following table.
 \hline
 \multicolumn{2}{r}{T. Plan \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testPlan/LVV-P128}{LVV-P128} owner:} &
 \multicolumn{2}{l}{\textbf{ Jeffrey Carlin } }\\\hline
-\multicolumn{2}{r}{T. Cycle \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/testPlayer/LVV-R293}{LVV-R293} owner:} &
+\multicolumn{2}{r}{T. Cycle \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/testPlayer/LVV-R155}{LVV-R155} owner:} &
 \multicolumn{2}{l}{\textbf{
-Jeffrey Carlin }
+Leanne Guy }
 } \\\hline
 \textbf{Test Cases} & \textbf{Assigned to} & \textbf{Executed by} & \textbf{Additional Test Personnel} \\ \hline
 
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T2328}{LVV-T2328}
-& {\small Leanne Guy } & {\small Undefined } &
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T195}{LVV-T195}
+& {\small Jeffrey Kantor } & {\small Cristián Silva } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small Josh Hoblitt (Rubin Obs), Renata Frez (FIU/AmLight), Matt Kollross
+(NCSA) }
+\medskip
+\end{minipage}
+\\ \hline
+
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T189}{LVV-T189}
+& {\small Robert Gruendl } & {\small Cristián Silva } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small  }
 \medskip
 \end{minipage}
 \\ \hline
+
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T187}{LVV-T187}
+& {\small Jeffrey Kantor } & {\small Cristián Silva } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small Ron Lambert (LSST) }
+\medskip
+\end{minipage}
+\\ \hline
+
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T203}{LVV-T203}
+& {\small Kian-Tat Lim } & {\small Cristián Silva } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small Ron Lambert (LSST), Albert Astudillo (REUNA), Jeronimo Bezerra
+(FIU/AmLight), Matt Kollross (NCSA) }
+\medskip
+\end{minipage}
+\\ \hline
+
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T181}{LVV-T181}
+& {\small Cristián Silva } & {\small Cristián Silva } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small Heinrich Reinking (LSST), another LSST DM Person at Summit,
+Headquarters, or LDF }
+\medskip
+\end{minipage}
+\\ \hline
+
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T1612}{LVV-T1612}
+& {\small Jeffrey Kantor } & {\small Cristián Silva } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small Ron Lambert (LSST), Greg Thayer (SLAC) }
+\medskip
+\end{minipage}
+\\ \hline
+\multicolumn{2}{r}{T. Cycle \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/testPlayer/LVV-R293}{LVV-R293} owner:} &
+\multicolumn{2}{l}{\textbf{
+Jeffrey Carlin }
+} \\\hline
+\textbf{Test Cases} & \textbf{Assigned to} & \textbf{Executed by} & \textbf{Additional Test Personnel} \\ \hline
 
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T2329}{LVV-T2329}
 & {\small Leanne Guy } & {\small Undefined } &
@@ -272,17 +326,8 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T1332}{LVV-T1332}
-& {\small Leanne Guy } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small  }
-\medskip
-\end{minipage}
-\\ \hline
-
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T385}{LVV-T385}
-& {\small Leanne Guy } & {\small Undefined } &
+& {\small Leanne Guy } & {\small Leanne Guy } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small  }
@@ -300,7 +345,7 @@ Jeffrey Carlin }
 \\ \hline
 
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T2900}{LVV-T2900}
-& {\small Leanne Guy } & {\small Undefined } &
+& {\small Leanne Guy } & {\small Leanne Guy } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small  }
@@ -318,7 +363,7 @@ Jeffrey Carlin }
 \\ \hline
 
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T2177}{LVV-T2177}
-& {\small Jeffrey Carlin } & {\small Undefined } &
+& {\small Jeffrey Carlin } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small  }
@@ -327,7 +372,7 @@ Jeffrey Carlin }
 \\ \hline
 
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T1755}{LVV-T1755}
-& {\small Jeffrey Carlin } & {\small Undefined } &
+& {\small Jeffrey Carlin } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small  }
@@ -336,7 +381,7 @@ Jeffrey Carlin }
 \\ \hline
 
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T2176}{LVV-T2176}
-& {\small Jeffrey Carlin } & {\small Undefined } &
+& {\small Jeffrey Carlin } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small  }
@@ -345,7 +390,7 @@ Jeffrey Carlin }
 \\ \hline
 
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T1754}{LVV-T1754}
-& {\small Jeffrey Carlin } & {\small Undefined } &
+& {\small Jeffrey Carlin } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small  }
@@ -354,7 +399,7 @@ Jeffrey Carlin }
 \\ \hline
 
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T376}{LVV-T376}
-& {\small Leanne Guy } & {\small Undefined } &
+& {\small Jeffrey Carlin } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small  }
@@ -416,24 +461,6 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T2331}{LVV-T2331}
-& {\small Leanne Guy } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small  }
-\medskip
-\end{minipage}
-\\ \hline
-
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T160}{LVV-T160}
-& {\small Gregory Dubois-Felsmann } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small  }
-\medskip
-\end{minipage}
-\\ \hline
-
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T159}{LVV-T159}
 & {\small Simon Krughoff } & {\small Undefined } &
 \begin{minipage}[]{6cm}
@@ -461,26 +488,8 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T44}{LVV-T44}
-& {\small Jeffrey Carlin } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small  }
-\medskip
-\end{minipage}
-\\ \hline
-
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T58}{LVV-T58}
 & {\small Eric Bellm } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small  }
-\medskip
-\end{minipage}
-\\ \hline
-
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T94}{LVV-T94}
-& {\small Melissa Graham } & {\small Undefined } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small  }
@@ -526,15 +535,6 @@ Jeffrey Carlin }
 
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T157}{LVV-T157}
 & {\small Jeffrey Carlin } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small  }
-\medskip
-\end{minipage}
-\\ \hline
-
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T156}{LVV-T156}
-& {\small Leanne Guy } & {\small Undefined } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small  }
@@ -767,18 +767,8 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T203}{LVV-T203}
-& {\small Leanne Guy } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small Ron Lambert (LSST), Albert Astudillo (REUNA), Jeronimo Bezerra
-(FIU/AmLight), Matt Kollross (NCSA) }
-\medskip
-\end{minipage}
-\\ \hline
-
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T202}{LVV-T202}
-& {\small Leanne Guy } & {\small Undefined } &
+& {\small Leanne Guy } & {\small Cristián Silva } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small Ron Lambert (LSST), Albert Astudillo (REUNA), Jeronimo Bezerra
@@ -788,7 +778,7 @@ Jeffrey Carlin }
 \\ \hline
 
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T201}{LVV-T201}
-& {\small Leanne Guy } & {\small Undefined } &
+& {\small Leanne Guy } & {\small Cristián Silva } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small Ron Lambert (LSST), Albert Astudillo (REUNA), Jeronimo Bezerra
@@ -798,7 +788,7 @@ Jeffrey Carlin }
 \\ \hline
 
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T200}{LVV-T200}
-& {\small Leanne Guy } & {\small Undefined } &
+& {\small Leanne Guy } & {\small Cristián Silva } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small Ron Lambert (LSST), Albert Astudillo (REUNA), Jeronimo Bezerra
@@ -809,16 +799,6 @@ Jeffrey Carlin }
 
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T196}{LVV-T196}
 & {\small Jeffrey Kantor } & {\small Cristián Silva } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small Josh Hoblitt (Rubin Obs), Renata Frez (FIU/AmLight), Matt Kollross
-(NCSA) }
-\medskip
-\end{minipage}
-\\ \hline
-
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T195}{LVV-T195}
-& {\small Leanne Guy } & {\small Undefined } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small Josh Hoblitt (Rubin Obs), Renata Frez (FIU/AmLight), Matt Kollross
@@ -852,15 +832,6 @@ Jeffrey Carlin }
 \begin{minipage}[]{6cm}
 \smallskip
 {\small Jeff Kantor (LSST) }
-\medskip
-\end{minipage}
-\\ \hline
-
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T187}{LVV-T187}
-& {\small Leanne Guy } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small Ron Lambert (LSST) }
 \medskip
 \end{minipage}
 \\ \hline
@@ -911,7 +882,7 @@ Jeffrey Carlin }
 \\ \hline
 
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T175}{LVV-T175}
-& {\small Robert Gruendl } & {\small Undefined } &
+& {\small Robert Gruendl } & {\small Cristián Silva } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small  }
@@ -1029,15 +1000,6 @@ Jeffrey Carlin }
 
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T134}{LVV-T134}
 & {\small Jeffrey Carlin } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small  }
-\medskip
-\end{minipage}
-\\ \hline
-
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T87}{LVV-T87}
-& {\small Jeffrey Carlin } & {\small Leanne Guy } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small  }
@@ -1172,15 +1134,6 @@ Jeffrey Carlin }
 \\ \hline
 
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T3100}{LVV-T3100}
-& {\small Leanne Guy } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small  }
-\medskip
-\end{minipage}
-\\ \hline
-
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T3099}{LVV-T3099}
 & {\small Leanne Guy } & {\small Undefined } &
 \begin{minipage}[]{6cm}
 \smallskip
@@ -1395,6 +1348,15 @@ Jeffrey Carlin }
 \medskip
 \end{minipage}
 \\ \hline
+
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T3177}{LVV-T3177}
+& {\small Jeffrey Carlin } & {\small Jeffrey Carlin } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small  }
+\medskip
+\end{minipage}
+\\ \hline
 \end{longtable}
 }
 
@@ -1411,14 +1373,26 @@ Jeffrey Carlin }
 \toprule
 \multicolumn{2}{r}{ T. Plan \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testPlan/LVV-P128}{LVV-P128}:} &
 \multicolumn{2}{p{10.9cm}}{\textbf{ LDM-503-19 (All P1a and 1b DM requirements verified) }} & Approved \\\hline
-\multicolumn{2}{r}{ T. Cycle \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/testPlayer/LVV-R293}{LVV-R293}:} &
-\multicolumn{2}{p{10.9cm}}{\textbf{ LDM-503-19 (All P1a and 1b DM requirements verified) }} & In Progress \\\hline
+\multicolumn{2}{r}{ T. Cycle \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/testPlayer/LVV-R155}{LVV-R155}:} &
+\multicolumn{2}{p{10.9cm}}{\textbf{ Network Acceptance Test Campaign 1 }} & Done \\\hline
 \textbf{Test Cases} &  \textbf{Ver.} & \textbf{Status} & \textbf{Comment} & \textbf{Issues} \\\toprule
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T2328}{LVV-T2328}
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T195}{LVV-T195}
 &
 \\
- \hfill Execution & LVV-E3755
-& Not Executed &
+ \hfill Execution & LVV-E1104
+& Pass &
+\begin{minipage}[]{9cm}
+\smallskip
+None
+\medskip
+\end{minipage}
+&
+     \\\hline
+  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T189}{LVV-T189}
+&
+\\
+ \hfill Execution & LVV-E3138
+& Pass &
 \begin{minipage}[]{9cm}
 \smallskip
 None
@@ -1426,7 +1400,58 @@ None
 \end{minipage}
 &
   \\\hline
-  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T2329}{LVV-T2329}
+  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T187}{LVV-T187}
+&
+\\
+ \hfill Execution & LVV-E3143
+& Pass &
+\begin{minipage}[]{9cm}
+\smallskip
+None
+\medskip
+\end{minipage}
+&
+         \\\hline
+  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T203}{LVV-T203}
+&
+\\
+ \hfill Execution & LVV-E3144
+& Pass &
+\begin{minipage}[]{9cm}
+\smallskip
+None
+\medskip
+\end{minipage}
+&
+     \\\hline
+  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T181}{LVV-T181}
+&
+\\
+ \hfill Execution & LVV-E3145
+& Pass &
+\begin{minipage}[]{9cm}
+\smallskip
+None
+\medskip
+\end{minipage}
+&
+   \\\hline
+  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T1612}{LVV-T1612}
+&
+\\
+ \hfill Execution & LVV-E3146
+& Pass &
+\begin{minipage}[]{9cm}
+\smallskip
+None
+\medskip
+\end{minipage}
+&
+   \\\hline
+    \multicolumn{2}{r}{ T. Cycle \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/testPlayer/LVV-R293}{LVV-R293}:} &
+\multicolumn{2}{p{10.9cm}}{\textbf{ LDM-503-19 (All P1a and 1b DM requirements verified) }} & In Progress \\\hline
+\textbf{Test Cases} &  \textbf{Ver.} & \textbf{Status} & \textbf{Comment} & \textbf{Issues} \\\toprule
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T2329}{LVV-T2329}
 &
 \\
  \hfill Execution & LVV-E3756
@@ -1546,30 +1571,18 @@ None
 \end{minipage}
 &
   \\\hline
-  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T1332}{LVV-T1332}
-&
-\\
- \hfill Execution & LVV-E3766
-& Not Executed &
-\begin{minipage}[]{9cm}
-\smallskip
-None
-\medskip
-\end{minipage}
-&
-    \\\hline
   \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T385}{LVV-T385}
 &
 \\
  \hfill Execution & LVV-E3767
-& Not Executed &
+& Pass &
 \begin{minipage}[]{9cm}
 \smallskip
 None
 \medskip
 \end{minipage}
 &
-    \\\hline
+  \\\hline
   \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T2901}{LVV-T2901}
 &
 \\
@@ -1586,14 +1599,14 @@ None
 &
 \\
  \hfill Execution & LVV-E3769
-& Not Executed &
+& In Progress &
 \begin{minipage}[]{9cm}
 \smallskip
 None
 \medskip
 \end{minipage}
 &
-  \\\hline
+   \\\hline
   \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T168}{LVV-T168}
 &
 \\
@@ -1610,10 +1623,14 @@ None
 &
 \\
  \hfill Execution & LVV-E3771
-& Not Executed &
+& Pass &
 \begin{minipage}[]{9cm}
 \smallskip
-None
+Test executed using a ticket branch that has not yet been merged to the
+pipelines codebase, running w\_2025\_37 of the science pipelines at the
+USDF. Results of the test are attached to this
+document\textquotesingle s repository as
+test\_LVV-T376\_T2176\_T2177.ipynb.
 \medskip
 \end{minipage}
 &
@@ -1622,22 +1639,29 @@ None
 &
 \\
  \hfill Execution & LVV-E3772
-& Not Executed &
+& Pass &
 \begin{minipage}[]{9cm}
 \smallskip
-None
+Test executed using a ticket branch that has not yet been merged to the
+pipelines codebase, running w\_2025\_37 of the science pipelines at the
+USDF. Results of the test are attached to this
+document\textquotesingle s repository as test\_LVV-T1755.ipynb.
 \medskip
 \end{minipage}
 &
-     \\\hline
+    \\\hline
   \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T2176}{LVV-T2176}
 &
 \\
  \hfill Execution & LVV-E3773
-& Not Executed &
+& Pass &
 \begin{minipage}[]{9cm}
 \smallskip
-None
+Test executed using a ticket branch that has not yet been merged to the
+pipelines codebase, running w\_2025\_37 of the science pipelines at the
+USDF. Results of the test are attached to this
+document\textquotesingle s repository as
+test\_LVV-T376\_T2176\_T2177.ipynb.
 \medskip
 \end{minipage}
 &
@@ -1646,26 +1670,33 @@ None
 &
 \\
  \hfill Execution & LVV-E3774
-& Not Executed &
+& Pass &
 \begin{minipage}[]{9cm}
 \smallskip
-None
+Test executed using a ticket branch that has not yet been merged to the
+pipelines codebase, running w\_2025\_37 of the science pipelines at the
+USDF. Results of the test are attached to this
+document\textquotesingle s repository as test\_LVV-T1754.ipynb.
 \medskip
 \end{minipage}
 &
-     \\\hline
+    \\\hline
   \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T376}{LVV-T376}
 &
 \\
  \hfill Execution & LVV-E3775
-& Not Executed &
+& Pass &
 \begin{minipage}[]{9cm}
 \smallskip
-None
+Test executed using a ticket branch that has not yet been merged to the
+pipelines codebase, running w\_2025\_37 of the science pipelines at the
+USDF. Results of the test are attached to this
+document\textquotesingle s repository as
+test\_LVV-T376\_T2176\_T2177.ipynb.
 \medskip
 \end{minipage}
 &
-     \\\hline
+    \\\hline
   \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T2724}{LVV-T2724}
 &
 \\
@@ -1738,30 +1769,6 @@ None
 \end{minipage}
 &
     \\\hline
-  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T2331}{LVV-T2331}
-&
-\\
- \hfill Execution & LVV-E3788
-& Not Executed &
-\begin{minipage}[]{9cm}
-\smallskip
-None
-\medskip
-\end{minipage}
-&
-  \\\hline
-  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T160}{LVV-T160}
-&
-\\
- \hfill Execution & LVV-E3789
-& Not Executed &
-\begin{minipage}[]{9cm}
-\smallskip
-None
-\medskip
-\end{minipage}
-&
-    \\\hline
   \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T159}{LVV-T159}
 &
 \\
@@ -1802,18 +1809,6 @@ document\textquotesingle s github repository as test\_LVV-T24.ipynb.
 \end{minipage}
 &
    \\\hline
-  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T44}{LVV-T44}
-&
-\\
- \hfill Execution & LVV-E3793
-& Not Executed &
-\begin{minipage}[]{9cm}
-\smallskip
-None
-\medskip
-\end{minipage}
-&
-  \\\hline
   \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T58}{LVV-T58}
 &
 \\
@@ -1826,18 +1821,6 @@ None
 \end{minipage}
 &
      \\\hline
-  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T94}{LVV-T94}
-&
-\\
- \hfill Execution & LVV-E3795
-& Not Executed &
-\begin{minipage}[]{9cm}
-\smallskip
-None
-\medskip
-\end{minipage}
-&
-   \\\hline
   \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T56}{LVV-T56}
 &
 \\
@@ -1898,18 +1881,6 @@ None
 \end{minipage}
 &
   \\\hline
-  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T156}{LVV-T156}
-&
-\\
- \hfill Execution & LVV-E3801
-& Not Executed &
-\begin{minipage}[]{9cm}
-\smallskip
-None
-\medskip
-\end{minipage}
-&
-    \\\hline
   \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T155}{LVV-T155}
 &
 \\
@@ -2219,23 +2190,11 @@ None
 \end{minipage}
 &
   \\\hline
-  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T203}{LVV-T203}
-&
-\\
- \hfill Execution & LVV-E3827
-& Not Executed &
-\begin{minipage}[]{9cm}
-\smallskip
-None
-\medskip
-\end{minipage}
-&
-     \\\hline
   \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T202}{LVV-T202}
 &
 \\
  \hfill Execution & LVV-E3828
-& Not Executed &
+& Pass &
 \begin{minipage}[]{9cm}
 \smallskip
 None
@@ -2247,7 +2206,7 @@ None
 &
 \\
  \hfill Execution & LVV-E3829
-& Not Executed &
+& Pass &
 \begin{minipage}[]{9cm}
 \smallskip
 None
@@ -2259,7 +2218,7 @@ None
 &
 \\
  \hfill Execution & LVV-E3830
-& Not Executed &
+& Pass &
 \begin{minipage}[]{9cm}
 \smallskip
 None
@@ -2279,18 +2238,6 @@ None
 \end{minipage}
 &
       \\\hline
-  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T195}{LVV-T195}
-&
-\\
- \hfill Execution & LVV-E3832
-& Not Executed &
-\begin{minipage}[]{9cm}
-\smallskip
-None
-\medskip
-\end{minipage}
-&
-     \\\hline
   \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T194}{LVV-T194}
 &
 \\
@@ -2327,18 +2274,6 @@ None
 \end{minipage}
 &
   \\\hline
-  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T187}{LVV-T187}
-&
-\\
- \hfill Execution & LVV-E3836
-& Not Executed &
-\begin{minipage}[]{9cm}
-\smallskip
-None
-\medskip
-\end{minipage}
-&
-         \\\hline
   \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T186}{LVV-T186}
 &
 \\
@@ -2403,7 +2338,7 @@ None
 &
 \\
  \hfill Execution & LVV-E3842
-& Not Executed &
+& Pass &
 \begin{minipage}[]{9cm}
 \smallskip
 None
@@ -2562,18 +2497,6 @@ report\textquotesingle s github repository as test\_LVV-T37.ipynb.
 &
 \\
  \hfill Execution & LVV-E3856
-& Not Executed &
-\begin{minipage}[]{9cm}
-\smallskip
-None
-\medskip
-\end{minipage}
-&
-  \\\hline
-  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T87}{LVV-T87}
-&
-\\
- \hfill Execution & LVV-E3857
 & Not Executed &
 \begin{minipage}[]{9cm}
 \smallskip
@@ -2762,18 +2685,6 @@ None
 \end{minipage}
 &
   \\\hline
-  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T3099}{LVV-T3099}
-&
-\\
- \hfill Execution & LVV-E3873
-& Not Executed &
-\begin{minipage}[]{9cm}
-\smallskip
-None
-\medskip
-\end{minipage}
-&
-  \\\hline
   \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T3098}{LVV-T3098}
 &
 \\
@@ -2838,7 +2749,7 @@ None
 &
 \\
  \hfill Execution & LVV-E3994
-& In Progress &
+& Pass &
 \begin{minipage}[]{9cm}
 \smallskip
 None
@@ -3083,6 +2994,19 @@ git repository as test\_LVV-T1845.ipynb.
 \end{minipage}
 &
      \\\hline
+  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T3177}{LVV-T3177}
+&
+\\
+ \hfill Execution & LVV-E4070
+& Pass &
+\begin{minipage}[]{9cm}
+\smallskip
+Results are in the notebook "test\_LVV-T3177.ipynb" attached to this
+test repository.
+\medskip
+\end{minipage}
+&
+    \\\hline
      \caption{Test Campaign Summary}
 \label{table:summary}
 \end{longtable}
@@ -3102,6 +3026,950 @@ None
 \section{Detailed Test Results}
 \label{sect:detailedtestresults}
 
+\subsection{Test Cycle LVV-R155 }
+
+Open test cycle {\it \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/testPlayer/LVV-R155}{Network Acceptance Test Campaign 1}} in Jira.
+
+Test Cycle name: Network Acceptance Test Campaign 1\\
+Status: Done
+
+This test cycle includes the list of test cases required to verify the
+network infrastructure without encryption
+
+\subsubsection{Software Version/Baseline}
+Not provided.
+
+\subsubsection{Configuration}
+Not provided.
+
+\subsubsection{Test Cases in LVV-R155 Test Cycle}
+
+\paragraph{ LVV-T195 - Verify implementation of Base to Archive Network Reliability }\mbox{}\\
+
+Version \textbf{1.0(d)}.
+Status \textbf{Approved}.
+Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T195}{\textit{ LVV-T195 } }
+test case in Jira.
+
+Verify Base to Archive Network Reliability by demonstrating that the
+network can recover from outages within baseToArchNetMTTR =
+48{[}hour{]}.
+
+\textbf{ Preconditions}:\\ \begin{enumerate}
+\tightlist
+\item
+  Archiver/Forwarders are configured at Base, connected to REUNA DWDM,
+  loaded with simulated or pre-cursor data, running on end node
+  computers that are the production hardware or equivalent to it.
+\item
+  Archiver/Forwarder receivers or other capability is on configured at
+  LDF, connected to Base - Archive Network, running on end node
+  computers that are the production hardware or equivalent to it.
+\item
+  At least 6 months of monitoring data for this link is available.
+\item
+  As-built documentation for all of the above is available.
+\end{enumerate}
+
+NOTE: This test will be repeated at increasing data volumes as
+additional observatory capabilities (e.g. ComCAM, FullCam) become
+available. Final verification will be tested at full operational volume.
+After the initial test, the corresponding verification elements will be
+flagged as ``Requires Monitoring'' such that those requirements will be
+closed out as having been verified but will continue to be monitored
+throughout commissioning to ensure they do not drop out of compliance.
+This will also be monitored for end to end Summit - Data Facility
+transfers during Commissioning.\\
+\strut \\
+
+
+Execution status: {\bf Pass }\\
+Final comment:\\None
+
+
+
+% Note Steps "Not Executed" and with No Result are not shown in this report if the flag is passed
+Detailed steps results LVV-R155-LVV-E1104-1243140252:\\
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E1104-1 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Disconnect primary fiber on base side of Base - ~Archive network.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+LATISS, ComCAM, or FullCAM data.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Network fails over to secondary path.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Network on primary path is disconnected\\
+\textbf{Image Download Error}\\
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E1104-2 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Simulate diagnosis and repair by elapsed time.\\
+\strut \\
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+NA
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Wall clock advances by 48 hours. ~Data is successfully transferred over
+secondary path.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Traffic shifts to secondary path\\
+\textbf{Image Download Error}\\
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E1104-3 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Reconnect primary fiber on base side of Base - Archive network.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+NA
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Network recovers to primary path.~
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Network is reconnected in the primary path\\
+\textbf{Image Download Error}
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E1104-4 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Analyze fail-over and recovery times. ~Compare to historical data and
+extrapolate to MTTR.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Verify recovery can occur within baseToArchNetMTTR = 48{[}hour{]}.
+Demonstrate reconnection and recovery to transfer of data at or
+exceeding rates specified in LDM-142.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Failover and Recovery of traffic happens in milliseconds, given that
+both links are available.~
+
+
+}
+  % end if not not executed - no steps if not executed
+\paragraph{ LVV-T189 - Verify implementation of Summit Facility Infrastructure }\mbox{}\\
+
+Version \textbf{1.0(d)}.
+Status \textbf{Approved}.
+Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T189}{\textit{ LVV-T189 } }
+test case in Jira.
+
+Verify that the Summit Facility ~provides sufficient computing, storage,
+and network infrastructure to support buffering and forwarding of all
+raw image data to the Archive Facility, and compute facilities to
+support Commissioning activities.~
+
+\textbf{ Preconditions}:\\ Summit facility in place
+
+
+Execution status: {\bf Pass }\\
+Final comment:\\None
+
+
+
+% Note Steps "Not Executed" and with No Result are not shown in this report if the flag is passed
+Detailed steps results LVV-R155-LVV-E3138-1243141759:\\
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3138-1 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Analyze design and sizing model
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Currently the summit provides:\\
+2000 Cores\\
+6PB of S3 Storage\\
+100GB/s interfaces on storage nodes and 10GB/s on computing nodes\\
+600Gbs links from summit to base.\\
+\strut \\
+\strut \\
+
+
+}
+  % end if not not executed - no steps if not executed
+\paragraph{ LVV-T187 - Verify implementation of Summit to Base Network Secondary Link }\mbox{}\\
+
+Version \textbf{1.0(d)}.
+Status \textbf{Approved}.
+Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T187}{\textit{ LVV-T187 } }
+test case in Jira.
+
+Verify automated fail-over from primary to secondary equipment in Rubin
+Observatory DWDM on simulated failure of primary. ~Verify bandwidth
+sufficiency on secondary. ~Verify automated recovery to primary
+equipment on simulated restoration of primary. ~Repeat for failure of
+Rubin Observatory fiber and fail-over to AURA fiber and DWDM.
+~Demonstrate use of secondary in "catch-up" mode.
+
+\textbf{ Preconditions}:\\ \begin{enumerate}
+\tightlist
+\item
+  PMCS DMTC-7400-2400 complete.
+\item
+  As-built documentation for Summit - Base Network is available.
+\end{enumerate}
+
+NOTE: After the initial test, the corresponding verification elements
+will be flagged as ``Requires Monitoring'' such that those requirements
+will be closed out as having been verified but will continue to be
+monitored throughout commissioning to ensure they do not drop out of
+compliance. This will also be monitored for end to end Summit - Data
+Facility transfers during Commissioning.
+
+
+Execution status: {\bf Pass }\\
+Final comment:\\None
+
+
+
+% Note Steps "Not Executed" and with No Result are not shown in this report if the flag is passed
+Detailed steps results LVV-R155-LVV-E3143-1243141764:\\
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3143-1 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Transfer data between summit and base on primary equipment (LSST Summit
+- Base) over uninterrupted 1 day period. ~
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+LATISS, ComCAM, or LSSTCAM data.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Normal operations.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+The following is Auxtel data during the first weekend of March\\
+\textbf{Image Download Error}
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3143-2 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Simulate equipment outage by disconnecting power card from primary DWDM
+equipment on base side of Summit - Base Fiber.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+NA
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Network fails over to secondary equipment in \textless=60s.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+\hfill\break
+Fault simulated. Since this is an OSPF deployment, the Fiber restored
+and converged in less than 10 seconds.\\
+\strut \\
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3143-3 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Transfer data between summit and base over secondary equipment
+uninterrupted 1 day period while monitoring network.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+NA
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Verify that secondary equipment is capable of transferring 1 night of
+raw data (nCalibExpDay + nRawExpNightMax = 450 + 2800 = ~3250 exposures)
+within summToBaseNet2TransMax (72 hours), i.e. at or exceeding rates
+specified in LDM-142.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Data transfered using secondary link uninterrupted for 1 day\\
+\textbf{Image Download Error}
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3143-4 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Restore ~primary equipment (i.e. reconnect power card to primary
+equipment.)
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+NA
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Network recovers to primary in \textless= 60s.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Since this is an OSPF deployment, the Fiber restored and converged in
+less than 10 seconds.
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3143-5 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Simulate fiber outage by disconnecting fiber from primary DWDM equipment
+on base side of Summit - Base Fiber.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+NA
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Network fails over to AURA DWDM and fiber.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Failure executed~
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3143-6 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Transfer data between summit and base over AURA fiber and equipment
+uninterrupted 1 day period while monitoring network.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+LATISS, ComCAM, or FullCAM data.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Verify that AURA fiber and equipment is capable of transferring 1 night
+of raw data (nCalibExpDay + nRawExpNightMax = 450 + 2800 = ~3250
+exposures) within summToBaseNet2TransMax (72 hours), i.e. at or
+exceeding rates specified in LDM-142.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Auxtel data transfered over 1 day\\
+\textbf{Image Download Error}\\
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3143-7 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Restore ~primary fiber (i.e. reconnect fiber to Rubin Observatory DWDM
+equipment.)
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Network recovers to Rubin Observatory fiber and DWDM.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Fiber restored
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3143-8 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Demonstrate use of secondary in "catch-up" mode.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+DAQ data buffer full of images and associated meta-data
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Images from DAQ buffer and associated metadata are retrievable over
+secondary path while current observing data is being transferred over
+primary path.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Traffic recovered over the primary path\\
+\textbf{Image Download Error}\\
+
+
+}
+  % end if not not executed - no steps if not executed
+\paragraph{ LVV-T203 - Verify implementation of Archive to Data Access Center Network Secondary
+Link }\mbox{}\\
+
+Version \textbf{1.0(d)}.
+Status \textbf{Approved}.
+Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T203}{\textit{ LVV-T203 } }
+test case in Jira.
+
+Verify the Archive to Data Access Center Network via Secondary Link by
+simulating a failure on the primary path and capacity on the secondary
+path.
+
+\textbf{ Preconditions}:\\ \begin{enumerate}
+\tightlist
+\item
+  Data is staged in LDF and data transfer capabilities to US DAC and
+  Chilean DAC are in place, running on end node computers that are the
+  production hardware or equivalent to it.
+\item
+  As-built documentation for all of the above is available.
+\end{enumerate}
+
+NOTE: This test will be repeated at increasing data volumes as
+additional observatory capabilities (e.g. ComCAM, FullCam) become
+available. Final verification will be tested at full operational volume.
+After the initial test, the corresponding verification elements will be
+flagged as ``Requires Monitoring'' such that those requirements will be
+closed out as having been verified but will continue to be monitored
+throughout commissioning to ensure they do not drop out of compliance.
+This will also be monitored for end to end Summit - Data Facility
+transfers during Commissioning.\\
+\strut \\
+
+
+Execution status: {\bf Pass }\\
+Final comment:\\None
+
+
+
+% Note Steps "Not Executed" and with No Result are not shown in this report if the flag is passed
+Detailed steps results LVV-R155-LVV-E3144-1243141765:\\
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3144-1 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Transfer data between Archive and DACs on primary path over
+uninterrupted 1 week period.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+Data Release or other petabyte-scale test data set.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Data transfers without failures or extended latency spikes, at or
+exceeding rates specified in LDM-142 throughout fail-over period.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+\textbf{Image Download Error}\\
+Data has been succesfully transfered uninterrupted more than 1 week.~
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3144-2 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Simulate outage on primary path by disconnecting fiber on primary on
+Archive side of Archive - DACs networks.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+NA
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Network fails over to secondary links in \textless= 60s.\\
+\strut \\
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Simulating failure can be noticeable checking the ipsec links.\\
+\strut \\
+\textbf{Image Download Error}
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3144-3 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Transfer data between base and archive over secondary equipment
+uninterrupted 1 day period.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+Data Release or other petabyte-scale test data set.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Data transfers without failures or extended latency spikes, ~at or
+exceeding rates specified in LDM-142 throughout fail-over period.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+During the same period, there\textquotesingle s failover to the
+secondary link, noticeable by the lighter color link.\\
+\textbf{Image Download Error}Tranfers have been done for more than 24
+hours over the secondary path\\
+\textbf{Image Download Error}\\
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3144-4 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Restore connection on primary link (reconnect fiber).
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+NA
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Network recovers to primary in \textless= 60s.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Recovery to the main link is completed in expected time\\
+\textbf{Image Download Error}
+
+
+}
+  % end if not not executed - no steps if not executed
+\paragraph{ LVV-T181 - Verify Base Voice Over IP (VOIP) }\mbox{}\\
+
+Version \textbf{1.0(d)}.
+Status \textbf{Approved}.
+Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T181}{\textit{ LVV-T181 } }
+test case in Jira.
+
+Verify as-built VOIP at the Base Facility is operational and performs as
+expected (i.e. sufficient number of extensions allocated properly, no
+frequent drop-outs, no frequent jaggies on video, etc.) on both voice
+calls and videoconferening.
+
+\textbf{ Preconditions}:\\ \begin{enumerate}
+\tightlist
+\item
+  Base VOIP is installed/configured and Test Personnel have phone sets.
+  ~Base Videoconference system is installed/configured. ~Summit,
+  Headquarters, and/or LDF Videconference system is
+  installed/configured.
+\item
+  As-built documentation for all of the above is available.
+\end{enumerate}
+
+
+Execution status: {\bf Pass }\\
+Final comment:\\None
+
+
+
+% Note Steps "Not Executed" and with No Result are not shown in this report if the flag is passed
+Detailed steps results LVV-R155-LVV-E3145-1243141766:\\
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3145-1 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Test voice calls over VOIP system from Base Facility to locations in
+~Base and to other Rubin Observatory facilities.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+As-built VOIP at the Base Facility is operational and performs as
+expected (i.e. sufficient number of extensions allocated properly, no
+frequent drop-outs, etc.).
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+VoIP works, from base to summit, to NOIRLab, International, etc.~
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3145-2 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Test video conferences over ~system from Base Facility to locations in
+Base and to other Rubin Observatory facilities.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Verify (a) plannned and (b) as-built VOIP at the Base Facility is
+operational and performs as expected (i.e. no frequent drop-outs, no
+frequent audio glitches, no frequent jaggies on video, etc.).
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Video conference works and we use Zoom.~
+
+
+}
+  % end if not not executed - no steps if not executed
+\paragraph{ LVV-T1612 - Verify Summit - Base Network Integration (System Level) }\mbox{}\\
+
+Version \textbf{1.0(d)}.
+Status \textbf{Approved}.
+Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T1612}{\textit{ LVV-T1612 } }
+test case in Jira.
+
+Verify ISO Layer 3 full (22 x 10 Gbps ethernet ports on DAQ side with
+test data from DAQ test stand, AURA, Camera DAQ team do test).
+Demonstrate transfer of data at or exceeding rates specified in \citeds{LDM-142}.
+
+\textbf{ Preconditions}:\\ \begin{enumerate}
+\tightlist
+\item
+  PMCS DMTC-7400-2400 COMPLETE
+\item
+  \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/1401}{LVV-T1168}
+  Passed
+\item
+  EITHER: Full Camera DAQ installed on summit and loaded with data OR:
+  high-quality DAQ application-level simulators that match the form,
+  volume, file paths, compressibility, and cadence of the expected
+  instrument data, running on end node computers that are the production
+  hardware or equivalent to it. Scientific validity of the data content
+  is not essential.
+\item
+  Archiver/forwarders installed at Base running on end node computers
+  that are the production hardware or equivalent to it.
+\item
+  As-built documentation for all of the above is available.
+\end{enumerate}
+
+NOTE: This test will be repeated at increasing data volumes as
+additional observatory capabilities (e.g. ComCAM, FullCam) become
+available. Final verification will be tested at full operational
+volume.After the initial test, the corresponding verification elements
+will be flagged as ``Requires Monitoring'' such that those requirements
+will be closed out as having been verified but will continue to be
+monitored throughout commissioning to ensure they do not drop out of
+compliance. This will also be monitored for end to end Summit - Data
+Facility transfers during Commissioning.
+
+
+Execution status: {\bf Pass }\\
+Final comment:\\None
+
+
+
+% Note Steps "Not Executed" and with No Result are not shown in this report if the flag is passed
+Detailed steps results LVV-R155-LVV-E3146-1243141767:\\
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3146-1 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Verify Pre-conditions are satisfied.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+NA
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Pre-conditions are satisfied.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Pre-conditions are met, and T1168 passed
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3146-2 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Transfer data between summit and base over uninterrupted 1 day period.
+~Monitor transfer of data at or exceeding rates specified in LDM-142.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+DAQ pre-loaded data
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Data transfers at or exceeding rates specified in LDM-142.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Summit - Base has been in operations for a long time. Several night runs
+have used this link. The link is 6x100 and 2x100 as specified in
+LDM-142\\
+\textbf{Image Download Error}
+
+
+}
+  % end if not not executed - no steps if not executed
+  %end of the if with theo test_items in testcycles_map[cyclie.id]
+
 \subsection{Test Cycle LVV-R293 }
 
 Open test cycle {\it \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/testPlayer/LVV-R293}{LDM-503-19 (All P1a and 1b DM requirements verified)}} in Jira.
@@ -3120,26 +3988,6 @@ Not provided.
 
 \subsubsection{Test Cases in LVV-R293 Test Cycle}
 
-\paragraph{ LVV-T2328 - Verify regeneration of un-archived Data Products (Services)\_1 }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Status \textbf{Draft}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T2328}{\textit{ LVV-T2328 } }
-test case in Jira.
-
-Verify that unarchived Level 1 and Level 2 data products can be
-regenerated on-demand using and IVOA-standards based service that usese
-archived inputs and provenance data.~
-
-\textbf{ Preconditions}:\\ None
-
-
-Execution status: {\bf Not Executed }\\
-Final comment:\\None
-
-
-
-  % end if not not executed - no steps if not executed
 \paragraph{ LVV-T2329 - Verify the archiving of ancilliary data }\mbox{}\\
 
 Version \textbf{1.0(d)}.
@@ -3344,27 +4192,6 @@ Final comment:\\None
 
 
   % end if not not executed - no steps if not executed
-\paragraph{ LVV-T1332 - Verify implementation of maximum time for retrieval of CCD-sized coadd
-cutouts }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Status \textbf{Defined}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T1332}{\textit{ LVV-T1332 } }
-test case in Jira.
-
-Verify that at least \textbf{ccdRetrievalUsers = 20~}users can retrieve
-CCD-sized coadd cutouts using the IVOA SODA protocol within a maximum
-retrieval time of~\textbf{ccdRetrievalTime = 15 seconds}.
-
-\textbf{ Preconditions}:\\ None
-
-
-Execution status: {\bf Not Executed }\\
-Final comment:\\None
-
-
-
-  % end if not not executed - no steps if not executed
 \paragraph{ LVV-T385 - Verify implementation of minimum number of simultaneous retrievals of
 CCD-sized coadd cutouts }\mbox{}\\
 
@@ -3380,11 +4207,44 @@ SODA protocol.~
 \textbf{ Preconditions}:\\ None
 
 
-Execution status: {\bf Not Executed }\\
+Execution status: {\bf Pass }\\
 Final comment:\\None
 
 
 
+% Note Steps "Not Executed" and with No Result are not shown in this report if the flag is passed
+Detailed steps results LVV-R293-LVV-E3767-1319223029:\\
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3767-1 & Step Execution Status: \textbf{ Not Executed } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Verified by LVV\_T1332
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+All of the simulated~\textbf{ccdRetrievalUsers = 20~}users retrieved
+images within the specified time (see related Verification Element and
+Test Case).
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+
+
+}
   % end if not not executed - no steps if not executed
 \paragraph{ LVV-T2901 - Verify the the maximum time to retrieve all PVI images for single visit }\mbox{}\\
 
@@ -3411,7 +4271,7 @@ Final comment:\\None
 \paragraph{ LVV-T2900 - Verify the maximum time to retrieve single-CCD, single-visit PVI image }\mbox{}\\
 
 Version \textbf{1.0(d)}.
-Status \textbf{Draft}.
+Status \textbf{Approved}.
 Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T2900}{\textit{ LVV-T2900 } }
 test case in Jira.
 
@@ -3423,11 +4283,73 @@ requests for distinct single-CCD PVIs.
 \textbf{ Preconditions}:\\ Image Services VO SIAv2 implementation deployed on the RSP
 
 
-Execution status: {\bf Not Executed }\\
+Execution status: {\bf In Progress }\\
 Final comment:\\None
 
 
 
+% Note Steps "Not Executed" and with No Result are not shown in this report if the flag is passed
+Detailed steps results LVV-R293-LVV-E3769-1319223031:\\
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3769-1 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Run test script DMTR-441/notebooks/test\_LVV-T2900.ipynb on
+data-int.lsst.cloud in the scale testing environement
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+DP1
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Script runs without error~
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3769-2 & Step Execution Status: \textbf{ Not Executed } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Verify that the query time to retrieve a single-CCD PVI under a load of
+pviRetrievalUsers = 20~
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+DP1
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+PVI retrieval~ time under load is \textless{} pviRetrievalTime = 10 ~
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+
+
+}
   % end if not not executed - no steps if not executed
 \paragraph{ LVV-T168 - Verify design of Data Access Services allows Evolution of the LSST Data
 Model }\mbox{}\\
@@ -3454,7 +4376,7 @@ Final comment:\\None
 scales less than to 5 arcmin. }\mbox{}\\
 
 Version \textbf{1.0(d)}.
-Status \textbf{Draft}.
+Status \textbf{Approved}.
 Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T2177}{\textit{ LVV-T2177 } }
 test case in Jira.
 
@@ -3465,11 +4387,54 @@ DMS and applied to the appropriate metrics.
 \textbf{ Preconditions}:\\ None
 
 
-Execution status: {\bf Not Executed }\\
-Final comment:\\None
+Execution status: {\bf Pass }\\
+Final comment:\\Test executed using a ticket branch that has not yet been merged to the
+pipelines codebase, running w\_2025\_37 of the science pipelines at the
+USDF. Results of the test are attached to this
+document\textquotesingle s repository as
+test\_LVV-T376\_T2176\_T2177.ipynb.
 
 
 
+% Note Steps "Not Executed" and with No Result are not shown in this report if the flag is passed
+Detailed steps results LVV-R293-LVV-E3771-1319223034:\\
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3771-1 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Check that the correct value for the TE3 threshold has been encoded in
+the package that measures performance metrics.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+The attached notebook demonstrates the retrieval of a `visit\_table` and
+extraction of the TE3 metrics from this table. An example plot from the
+notebook is shown below:\\
+\textbf{Image Download Error}We note that the task to measure these
+metrics has recently been rewritten, and is thus still in review.
+Nonetheless, we have demonstrated that the software exists to calculate
+these metrics, and thus deem this test a Pass. The metrics will be added
+to the `analysis\_tools` package soon.
+
+
+}
   % end if not not executed - no steps if not executed
 \paragraph{ LVV-T1755 - Verify calculation of residual PSF ellipticity correlations for
 separations less than 1 arcmin }\mbox{}\\
@@ -3488,17 +4453,131 @@ the requirement that it shall be no greater than \textbf{TE1 =
 \textbf{ Preconditions}:\\ None
 
 
-Execution status: {\bf Not Executed }\\
-Final comment:\\None
+Execution status: {\bf Pass }\\
+Final comment:\\Test executed using a ticket branch that has not yet been merged to the
+pipelines codebase, running w\_2025\_37 of the science pipelines at the
+USDF. Results of the test are attached to this
+document\textquotesingle s repository as test\_LVV-T1755.ipynb.
 
 
 
+% Note Steps "Not Executed" and with No Result are not shown in this report if the flag is passed
+Detailed steps results LVV-R293-LVV-E3772-1319223035:\\
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3772-1 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Identify a dataset containing at least one field with multiple
+overlapping visits.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+A dataset that has been ingested into a Butler repository.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+The code to do these measurements is \hspace{0pt}still in review, so
+this test\textquotesingle s outputs \hspace{0pt}reside in a user
+collection:\\
+\strut \\
+testcoll =
+\textquotesingle u/leget/LSSTCam/DM-46582/PSF\_TEx\_w37\_run2\textquotesingle{}\\
+butler = Butler(\textquotesingle/repo/main\textquotesingle,
+collections={[}testcoll{]})
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3772-2 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Point the butler to an appropriate (precursor or simulated) dataset
+containing data in all filters, that has had the ComputeExPsfTask run on
+it.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+The outputs of the ‚Äã"Ex" ellipticity ‚Äãresiduals task are ‚Äãstored
+in the `visit\_table` dataset. Load this table:\\
+\strut \\
+visitTable = butler.get("visit\_table", instrument="LSSTCam")
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3772-3 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Confirm that the metric TE1 has been calculated, and that its values are
+reasonable.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+A JSON file (and/or a report generated from that JSON file)
+demonstrating that TE1 has been calculated.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+The attached notebook shows many plots of the TE1 metric, which appear
+like the following:\\
+\textbf{Image Download Error}We note that the task to measure these
+metrics has recently been rewritten, and is thus still in review.
+Nonetheless, we have demonstrated that the software exists to calculate
+these metrics, and thus deem this test a Pass.
+
+
+}
   % end if not not executed - no steps if not executed
 \paragraph{ LVV-T2176 - Per-image limit on the median residual ellipticity correlations at
 scales greater than or equal to 5 arcmin. }\mbox{}\\
 
 Version \textbf{1.0(d)}.
-Status \textbf{Draft}.
+Status \textbf{Approved}.
 Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T2176}{\textit{ LVV-T2176 } }
 test case in Jira.
 
@@ -3509,11 +4588,55 @@ configured in the DMS and applied to the appropriate metrics
 \textbf{ Preconditions}:\\ None
 
 
-Execution status: {\bf Not Executed }\\
-Final comment:\\None
+Execution status: {\bf Pass }\\
+Final comment:\\Test executed using a ticket branch that has not yet been merged to the
+pipelines codebase, running w\_2025\_37 of the science pipelines at the
+USDF. Results of the test are attached to this
+document\textquotesingle s repository as
+test\_LVV-T376\_T2176\_T2177.ipynb.
 
 
 
+% Note Steps "Not Executed" and with No Result are not shown in this report if the flag is passed
+Detailed steps results LVV-R293-LVV-E3773-1319223036:\\
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3773-1 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Check that the correct value for the TE4 threshold has been encoded in
+the package that measures performance metrics.\\
+\strut \\
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+The attached notebook demonstrates the retrieval of a `visit\_table` and
+extraction of the TE4 metrics from this table. An example plot from the
+notebook is shown below:\\
+\textbf{Image Download Error}We note that the task to measure these
+metrics has recently been rewritten, and is thus still in review.
+Nonetheless, we have demonstrated that the software exists to calculate
+these metrics, and thus deem this test a Pass. The metrics will be added
+to the `analysis\_tools` package soon.
+
+
+}
   % end if not not executed - no steps if not executed
 \paragraph{ LVV-T1754 - Verify calculation of residual PSF ellipticity correlations for
 separations greater than or equal to 5 arcmin }\mbox{}\\
@@ -3532,11 +4655,125 @@ whether it meets the requirement that it shall be no greater than
 \textbf{ Preconditions}:\\ None
 
 
-Execution status: {\bf Not Executed }\\
-Final comment:\\None
+Execution status: {\bf Pass }\\
+Final comment:\\Test executed using a ticket branch that has not yet been merged to the
+pipelines codebase, running w\_2025\_37 of the science pipelines at the
+USDF. Results of the test are attached to this
+document\textquotesingle s repository as test\_LVV-T1754.ipynb.
 
 
 
+% Note Steps "Not Executed" and with No Result are not shown in this report if the flag is passed
+Detailed steps results LVV-R293-LVV-E3774-1319223037:\\
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3774-1 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Identify a dataset containing at least one field with multiple
+overlapping visits.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+A dataset that has been ingested into a Butler repository.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+The code to do these measurements is \hspace{0pt}still in review, so
+this test\textquotesingle s outputs \hspace{0pt}reside in a user
+collection:\\
+\strut \\
+testcoll =
+\textquotesingle u/leget/LSSTCam/DM-46582/PSF\_TEx\_w37\_run2\textquotesingle{}\\
+butler = Butler(\textquotesingle/repo/main\textquotesingle,
+collections={[}testcoll{]})
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3774-2 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Point the butler to an appropriate (precursor or simulated) dataset
+containing data in all filters, that has had the ComputeExPsfTask run on
+it.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+The outputs of the ‚Äã"Ex" ellipticity ‚Äãresiduals task are ‚Äãstored
+in the `visit\_table` dataset. Load this table:\\
+\strut \\
+visitTable = butler.get("visit\_table", instrument="LSSTCam")
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3774-3 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Confirm that the metric TE2 has been calculated, and that its values are
+reasonable.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+A JSON file (and/or a report generated from that JSON file)
+demonstrating that TE2 has been calculated.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+The attached notebook shows plots of the TE2 metrics, which appear like
+the following:\\
+\textbf{Image Download Error}We note that the task to measure these
+metrics has recently been rewritten, and is thus still in review.
+Nonetheless, we have demonstrated that the software exists to calculate
+these metrics, and thus deem this test a Pass.
+
+
+}
   % end if not not executed - no steps if not executed
 \paragraph{ LVV-T376 - Verify the Calculation of Ellipticity Residuals and Correlations }\mbox{}\\
 
@@ -3551,11 +4788,127 @@ ellipticity residuals and correlation metrics defined in the OSS.~
 \textbf{ Preconditions}:\\ None
 
 
-Execution status: {\bf Not Executed }\\
-Final comment:\\None
+Execution status: {\bf Pass }\\
+Final comment:\\Test executed using a ticket branch that has not yet been merged to the
+pipelines codebase, running w\_2025\_37 of the science pipelines at the
+USDF. Results of the test are attached to this
+document\textquotesingle s repository as
+test\_LVV-T376\_T2176\_T2177.ipynb.
 
 
 
+% Note Steps "Not Executed" and with No Result are not shown in this report if the flag is passed
+Detailed steps results LVV-R293-LVV-E3775-1319223038:\\
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3775-1 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Identify the path to the data repository, which we will refer to as
+\textquotesingle DATA/path\textquotesingle, then execute the following:
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Butler repo available for reading.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+The code to do these measurements is \hspace{0pt}still in review, so
+this test\textquotesingle s outputs \hspace{0pt}reside in a user
+collection:\\
+\strut \\
+testcoll =
+\textquotesingle u/leget/LSSTCam/DM-46582/PSF\_TEx\_w37\_run2\textquotesingle{}\\
+butler = Butler(\textquotesingle/repo/main\textquotesingle,
+collections={[}testcoll{]})
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3775-2 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Point the butler to an appropriate (precursor or simulated) dataset
+containing data in all filters, that has had the ComputeExPsfTask run on
+it.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+The outputs of the ‚Äã"Ex" ellipticity ‚Äãresiduals task are ‚Äãstored
+in the `visit\_table` dataset. Load this table:\\
+\strut \\
+visitTable = butler.get("visit\_table", instrument="LSSTCam")
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3775-3 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Confirm that the ellipticity correlations have been measured, and that
+the output values for all of the ellipticity performance metrics are as
+expected.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Measured ellipticity metrics that are within reasonable values given the
+input dataset.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+The attached notebook shows many plots of the ellipticity residuals,
+which appear like the following:\\
+\textbf{Image Download Error}We note that the task to measure these
+metrics has recently been rewritten, and is thus still in review.
+Nonetheless, we have demonstrated that the software exists to calculate
+these metrics, and thus deem this test a Pass.
+
+
+}
   % end if not not executed - no steps if not executed
 \paragraph{ LVV-T2724 - Verify Result latency for high-volume full-sky queries on the Object
 table }\mbox{}\\
@@ -3678,66 +5031,6 @@ with precursor data; (3) checking on early data feeds from the Summit
 such as from AuxTel and ComCam.
 
 \textbf{ Preconditions}:\\ None
-
-
-Execution status: {\bf Not Executed }\\
-Final comment:\\None
-
-
-
-  % end if not not executed - no steps if not executed
-\paragraph{ LVV-T2331 - Verify the number of precovery serivce connections }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Status \textbf{Draft}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T2331}{\textit{ LVV-T2331 } }
-test case in Jira.
-
-Verify that the minimum number of precovery service connections that can
-be supported per hour is precoveryServePeakUsers
-
-\textbf{ Preconditions}:\\ None
-
-
-Execution status: {\bf Not Executed }\\
-Final comment:\\None
-
-
-
-  % end if not not executed - no steps if not executed
-\paragraph{ LVV-T160 - Verify implementation of Providing a Precovery Service }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Status \textbf{Draft}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T160}{\textit{ LVV-T160 } }
-test case in Jira.
-
-Verify that a technical capability to perform user-directed precovery
-analyses on difference images exists and that it is exposed through the
-LSST Science Platform. ~Verified by testing against precursor
-datasets.\\
-(Involves: LSP Portal, MOPS and Forced Photometry)
-
-\textbf{ Preconditions}:\\ \begin{enumerate}
-\tightlist
-\item
-  DECam HiTS data could be an appropriate set for this activity.
-\item
-  Precovery pipelines for follow-on to alert processing must exist and
-  be made available as a containerized version within the Science
-  Platform.
-\item
-  Determine limitations over which general precovery is supported. ~I
-  would suggest that precovery services be limited to current (or last
-  two) DRP campaigns with the possible addition of including non-DRP
-  products to encompass observations over the preceding year (does this
-  then require means to re-generate PVIs from Alert Production in
-  addition to DRP?)
-\item
-  Could re-use elements of
-  \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T80}{LVV-T80}
-  where quasars are used to test faint object detection.
-\end{enumerate}
 
 
 Execution status: {\bf Not Executed }\\
@@ -4065,25 +5358,6 @@ into the TAP query:\\
 
 }
   % end if not not executed - no steps if not executed
-\paragraph{ LVV-T44 - Verify implementation of Documenting Image Characterization }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Status \textbf{Draft}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T44}{\textit{ LVV-T44 } }
-test case in Jira.
-
-Verify that the persisted format for Processed Visit Images and
-associated instrument-signature-removal data products is documented.
-
-\textbf{ Preconditions}:\\ None
-
-
-Execution status: {\bf Not Executed }\\
-Final comment:\\None
-
-
-
-  % end if not not executed - no steps if not executed
 \paragraph{ LVV-T58 - Verify implementation of Matching DIASources to Objects }\mbox{}\\
 
 Version \textbf{1.0(d)}.
@@ -4095,31 +5369,6 @@ Verify that a cross-match table is available between DIASources and
 Objects.
 
 \textbf{ Preconditions}:\\ None
-
-
-Execution status: {\bf Not Executed }\\
-Final comment:\\None
-
-
-
-  % end if not not executed - no steps if not executed
-\paragraph{ LVV-T94 - Verify implementation of Special Programs Database }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Status \textbf{Draft}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T94}{\textit{ LVV-T94 } }
-test case in Jira.
-
-To confirm that data products from Special Programs are based solely on
-images obtained as part of SP via, e.g., metadata queries. To confirm
-that the SP data products can be joined to Prompt and DRP products by
-attempting to do so via, e.g., coordinate table joins, and attempting to
-e.g., find the faint counterparts in a Deep Drilling stack to variables
-with no Object detections in the DRP coadds.
-
-\textbf{ Preconditions}:\\ Databases created by reconfigured pipelines for processing Special
-Programs data (e.g., DIAObject/DIASource catalogs for a Deep Drilling
-Field).
 
 
 Execution status: {\bf Not Executed }\\
@@ -4219,27 +5468,6 @@ Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassi
 test case in Jira.
 
 Verify that Level 1 Data Products are accessible by science users.
-
-\textbf{ Preconditions}:\\ None
-
-
-Execution status: {\bf Not Executed }\\
-Final comment:\\None
-
-
-
-  % end if not not executed - no steps if not executed
-\paragraph{ LVV-T156 - Verify implementation of Regenerate Un-archived Data Products }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Status \textbf{Draft}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T156}{\textit{ LVV-T156 } }
-test case in Jira.
-
-Not all of the ancillary data products produced by a data release will
-be archived permanently. ~These ancillary products have been promised as
-accessible to the community.~ Show that these products can be produced
-from an archived data release after the fact.
 
 \textbf{ Preconditions}:\\ None
 
@@ -5246,46 +6474,6 @@ Final comment:\\None
 
 
   % end if not not executed - no steps if not executed
-\paragraph{ LVV-T203 - Verify implementation of Archive to Data Access Center Network Secondary
-Link }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Status \textbf{Draft}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T203}{\textit{ LVV-T203 } }
-test case in Jira.
-
-Verify the Archive to Data Access Center Network via Secondary Link by
-simulating a failure on the primary path and capacity on the secondary
-path.
-
-\textbf{ Preconditions}:\\ \begin{enumerate}
-\tightlist
-\item
-  Data is staged in LDF and data transfer capabilities to US DAC and
-  Chilean DAC are in place, running on end node computers that are the
-  production hardware or equivalent to it.
-\item
-  As-built documentation for all of the above is available.
-\end{enumerate}
-
-NOTE: This test will be repeated at increasing data volumes as
-additional observatory capabilities (e.g. ComCAM, FullCam) become
-available. Final verification will be tested at full operational volume.
-After the initial test, the corresponding verification elements will be
-flagged as ``Requires Monitoring'' such that those requirements will be
-closed out as having been verified but will continue to be monitored
-throughout commissioning to ensure they do not drop out of compliance.
-This will also be monitored for end to end Summit - Data Facility
-transfers during Commissioning.\\
-\strut \\
-
-
-Execution status: {\bf Not Executed }\\
-Final comment:\\None
-
-
-
-  % end if not not executed - no steps if not executed
 \paragraph{ LVV-T202 - Verify implementation of Archive to Data Access Center Network
 Reliability }\mbox{}\\
 
@@ -5322,11 +6510,110 @@ subsequent recovery to primary within or exceeding chToDacNetMTTR =
 \hfill\break
 
 
-Execution status: {\bf Not Executed }\\
+Execution status: {\bf Pass }\\
 Final comment:\\None
 
 
 
+% Note Steps "Not Executed" and with No Result are not shown in this report if the flag is passed
+Detailed steps results LVV-R293-LVV-E3828-1319223097:\\
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3828-1 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Simulate failure on primary paths by disconnecting fiber at an endpoint
+location in the archive on the Archive - ~DACs network.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+NA
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Networks fail over to secondary paths.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Primary link failed during the week and traffic shifted to backup link
+without interrupting transfers.\\
+\pandocbounded{\includegraphics[keepaspectratio]{jira_imgs//zephyr1.png}}\\
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3828-2 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+\ul{}Monitor transfers on secondary paths for 1 day.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Transfers occur without extended failures or extended latency spikes.
+~Data transfers on secondary at rates at or above those specified in
+LDM-142.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3828-3 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Simulate repair and recovery period by leaving primary fiber
+disconnected for at least 1 day, then reconnecting primary fiber.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+NA
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Wall clock advances by 1 day. ~Network recovers to primary path. ~Verify
+entire process meets chToDacNetMTTR = 48{[}hour{]}.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Traffic shifted to primary link when the path was restored.\\
+\strut \\
+
+
+}
   % end if not not executed - no steps if not executed
 \paragraph{ LVV-T201 - Verify implementation of Archive to Data Access Center Network
 Availability }\mbox{}\\
@@ -5365,11 +6652,74 @@ transfers during Commissioning.\\
 \strut \\
 
 
-Execution status: {\bf Not Executed }\\
+Execution status: {\bf Pass }\\
 Final comment:\\None
 
 
 
+% Note Steps "Not Executed" and with No Result are not shown in this report if the flag is passed
+Detailed steps results LVV-R293-LVV-E3829-1319223098:\\
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3829-1 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Transfer data between archive and DACs over uninterrupted 1 week period.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+Data Release or petabyte-scale test data set
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Data transfers without failures or extended latency spikes
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3829-2 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Analyze test data and compare to historical data. Extrapolate to 1 year
+testimate of MTBF.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+NA
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Networks can meet archToDacNetMTBF = 180{[}day{]} at or exceeding rates
+specified in LDM-142.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+The following are \textasciitilde6 months of traffic in the LHN,~
+
+
+}
   % end if not not executed - no steps if not executed
 \paragraph{ LVV-T200 - Verify implementation of Archive to Data Access Center Network }\mbox{}\\
 
@@ -5407,16 +6757,79 @@ transfers during Commissioning.\\
 \strut \\
 
 
-Execution status: {\bf Not Executed }\\
+Execution status: {\bf Pass }\\
 Final comment:\\None
 
 
 
+% Note Steps "Not Executed" and with No Result are not shown in this report if the flag is passed
+Detailed steps results LVV-R293-LVV-E3830-1319223099:\\
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3830-1 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Transfer data from Data Facility to US and Chilean DACs over an
+uninterrupted 1 week period.\\
+\strut \\
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+Data Release
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+Data transfers without significant failures or extended latency spikes
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3830-2 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Analyze network logs and compare with historical data on the links.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+NA
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+The networks can transfer data at archToDacBandwidth = 10000{[}megabit
+per second{]}, i.e. at or exceeding rates specified in LDM-142.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+
+
+}
   % end if not not executed - no steps if not executed
 \paragraph{ LVV-T196 - Verify implementation of Base to Archive Network Secondary Link }\mbox{}\\
 
 Version \textbf{1.0(d)}.
-Status \textbf{Draft}.
+Status \textbf{Approved}.
 Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T196}{\textit{ LVV-T196 } }
 test case in Jira.
 
@@ -5626,55 +7039,10 @@ Data is sent using the primery link if it\textquotesingle s available\\
 
 }
   % end if not not executed - no steps if not executed
-\paragraph{ LVV-T195 - Verify implementation of Base to Archive Network Reliability }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Status \textbf{Draft}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T195}{\textit{ LVV-T195 } }
-test case in Jira.
-
-Verify Base to Archive Network Reliability by demonstrating that the
-network can recover from outages within baseToArchNetMTTR =
-48{[}hour{]}.
-
-\textbf{ Preconditions}:\\ \begin{enumerate}
-\tightlist
-\item
-  Archiver/Forwarders are configured at Base, connected to REUNA DWDM,
-  loaded with simulated or pre-cursor data, running on end node
-  computers that are the production hardware or equivalent to it.
-\item
-  Archiver/Forwarder receivers or other capability is on configured at
-  LDF, connected to Base - Archive Network, running on end node
-  computers that are the production hardware or equivalent to it.
-\item
-  At least 6 months of monitoring data for this link is available.
-\item
-  As-built documentation for all of the above is available.
-\end{enumerate}
-
-NOTE: This test will be repeated at increasing data volumes as
-additional observatory capabilities (e.g. ComCAM, FullCam) become
-available. Final verification will be tested at full operational volume.
-After the initial test, the corresponding verification elements will be
-flagged as ``Requires Monitoring'' such that those requirements will be
-closed out as having been verified but will continue to be monitored
-throughout commissioning to ensure they do not drop out of compliance.
-This will also be monitored for end to end Summit - Data Facility
-transfers during Commissioning.\\
-\strut \\
-
-
-Execution status: {\bf Not Executed }\\
-Final comment:\\None
-
-
-
-  % end if not not executed - no steps if not executed
 \paragraph{ LVV-T194 - Verify implementation of Base to Archive Network Availability }\mbox{}\\
 
 Version \textbf{1.0(d)}.
-Status \textbf{Draft}.
+Status \textbf{Approved}.
 Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T194}{\textit{ LVV-T194 } }
 test case in Jira.
 
@@ -5789,7 +7157,7 @@ December 2024, there has been no complete loss of transfers.\\
 \paragraph{ LVV-T193 - Verify implementation of Base to Archive Network }\mbox{}\\
 
 Version \textbf{1.0(d)}.
-Status \textbf{Draft}.
+Status \textbf{Approved}.
 Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T193}{\textit{ LVV-T193 } }
 test case in Jira.
 
@@ -5971,46 +7339,10 @@ the operation and maintenance of the link.~
 
 }
   % end if not not executed - no steps if not executed
-\paragraph{ LVV-T187 - Verify implementation of Summit to Base Network Secondary Link }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Status \textbf{Draft}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T187}{\textit{ LVV-T187 } }
-test case in Jira.
-
-Verify automated fail-over from primary to secondary equipment in Rubin
-Observatory DWDM on simulated failure of primary. ~Verify bandwidth
-sufficiency on secondary. ~Verify automated recovery to primary
-equipment on simulated restoration of primary. ~Repeat for failure of
-Rubin Observatory fiber and fail-over to AURA fiber and DWDM.
-~Demonstrate use of secondary in "catch-up" mode.
-
-\textbf{ Preconditions}:\\ \begin{enumerate}
-\tightlist
-\item
-  PMCS DMTC-7400-2400 complete.
-\item
-  As-built documentation for Summit - Base Network is available.
-\end{enumerate}
-
-NOTE: After the initial test, the corresponding verification elements
-will be flagged as ``Requires Monitoring'' such that those requirements
-will be closed out as having been verified but will continue to be
-monitored throughout commissioning to ensure they do not drop out of
-compliance. This will also be monitored for end to end Summit - Data
-Facility transfers during Commissioning.
-
-
-Execution status: {\bf Not Executed }\\
-Final comment:\\None
-
-
-
-  % end if not not executed - no steps if not executed
 \paragraph{ LVV-T186 - Verify implementation of Summit to Base Network Reliability }\mbox{}\\
 
 Version \textbf{1.0(d)}.
-Status \textbf{Draft}.
+Status \textbf{Approved}.
 Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T186}{\textit{ LVV-T186 } }
 test case in Jira.
 
@@ -6267,7 +7599,7 @@ Saludos cordiales desde REUNA."
 \paragraph{ LVV-T185 - Verify implementation of Summit to Base Network Availability }\mbox{}\\
 
 Version \textbf{1.0(d)}.
-Status \textbf{Draft}.
+Status \textbf{Approved}.
 Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T185}{\textit{ LVV-T185 } }
 test case in Jira.
 
@@ -6457,11 +7789,44 @@ hours, baseToArchNetMTTR = 48 hours, ~archToDacNetMTTR = 48 hours).
 \textbf{ Preconditions}:\\ None
 
 
-Execution status: {\bf Not Executed }\\
+Execution status: {\bf Pass }\\
 Final comment:\\None
 
 
 
+% Note Steps "Not Executed" and with No Result are not shown in this report if the flag is passed
+Detailed steps results LVV-R293-LVV-E3842-1319223114:\\
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3842-1 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Analyze sizing model and network/storage design
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Storage has been sized to support up to 30 days in case of a link
+failure.\\
+\pandocbounded{\includegraphics[keepaspectratio]{jira_imgs//zephyr2.png}}\\
+
+
+}
   % end if not not executed - no steps if not executed
 \paragraph{ LVV-T174 - Verify implementation of Re-processing Capacity }\mbox{}\\
 
@@ -6863,27 +8228,6 @@ Final comment:\\None
 
 
   % end if not not executed - no steps if not executed
-\paragraph{ LVV-T87 - Verify implementation of Monochromatic Flatfield Data Cube }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Status \textbf{Approved}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T87}{\textit{ LVV-T87 } }
-test case in Jira.
-
-Verify that the DMS can generate a calibration image/cube that corrects
-for pixel-to-pixel wavelength-dependent detector response.\\
-Verify that the DMS can measure the effectiveness of this monochromatic
-flatfield data cube.
-
-\textbf{ Preconditions}:\\ None
-
-
-Execution status: {\bf Not Executed }\\
-Final comment:\\None
-
-
-
-  % end if not not executed - no steps if not executed
 \paragraph{ LVV-T86 - Verify implementation of Illumination Correction Frame }\mbox{}\\
 
 Version \textbf{1.0(d)}.
@@ -7262,32 +8606,12 @@ Final comment:\\None
 \paragraph{ LVV-T3100 - Verify secure data transfer from summit to archive }\mbox{}\\
 
 Version \textbf{1.0(d)}.
-Status \textbf{Draft}.
+Status \textbf{Approved}.
 Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T3100}{\textit{ LVV-T3100 } }
 test case in Jira.
 
 Verify that the data transfer from the summit to the USDF complies with
 funding agency requirements for cyber security.
-
-\textbf{ Preconditions}:\\ None
-
-
-Execution status: {\bf Not Executed }\\
-Final comment:\\None
-
-
-
-  % end if not not executed - no steps if not executed
-\paragraph{ LVV-T3099 - Verify implementation of secure data storage }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Status \textbf{Draft}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T3099}{\textit{ LVV-T3099 } }
-test case in Jira.
-
-Verify that the DMS stores image data in encrypted storage under secure
-conditions with limited access to authorized staff during the period of
-\textbf{L1EmbargoTmin=80{[}hour{]}}.
 
 \textbf{ Preconditions}:\\ None
 
@@ -7408,7 +8732,7 @@ Verify that a predict-visit schedule can be published by the OCS.
 \textbf{ Preconditions}:\\ None
 
 
-Execution status: {\bf In Progress }\\
+Execution status: {\bf Pass }\\
 Final comment:\\None
 
 
@@ -7483,7 +8807,7 @@ from the scheduler.~\textbf{Image Download Error}
 
 \begin{tabular}{p{4cm}p{12cm}}
 \toprule
-Step LVV-E3994-3 & Step Execution Status: \textbf{ In Progress } \\ \hline
+Step LVV-E3994-3 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -8891,7 +10215,7 @@ collections=testcoll)\\
 \strut \\
 After extracting the median offsets between the source table and refcat
 magnitudes, we extracted only the u-band results to make this figure:\\
-\pandocbounded{\includegraphics[keepaspectratio]{jira_imgs//zephyr2.png}}\\
+\pandocbounded{\includegraphics[keepaspectratio]{jira_imgs//zephyr4.png}}\\
 
 
 }
@@ -9102,6 +10426,142 @@ However, the required accuracy is not met for u-band. Given that the
 present test was executed on LSSTComCam data, we will assess the result
 as a Pass, but revisit this test when sufficient LSSTCam data are
 available.
+
+
+}
+  % end if not not executed - no steps if not executed
+\paragraph{ LVV-T3177 - Verify implementation of Image Differencing with single-exposure
+templates }\mbox{}\\
+
+Version \textbf{1.0(d)}.
+Status \textbf{Approved}.
+Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T3177}{\textit{ LVV-T3177 } }
+test case in Jira.
+
+Verify that the DMS can perform image differencing from single
+exposures.
+
+\textbf{ Preconditions}:\\ None
+
+
+Execution status: {\bf Pass }\\
+Final comment:\\Results are in the notebook "test\_LVV-T3177.ipynb" attached to this
+test repository.
+
+
+
+% Note Steps "Not Executed" and with No Result are not shown in this report if the flag is passed
+Detailed steps results LVV-R293-LVV-E4070-1895626380:\\
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E4070-1 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Identify a dataset that has already been processed through the full DRP
+pipelines, including difference imaging with coadd templates.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+This test used recently-reprocessed LSSTCam commissioning data from the
+Butler repo `dp2\_prep` and collection
+"LSSTCam/runs/DRP/20250421\_20250921/d\_2025\_11\_10/DM-53195".~
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E4070-2 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+窶鬼elect a single visit+detector image, and re-run template creation
+and 窶掬ifference imaging for that image. Specify~
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+A modified pipeline containing only the template creation and image
+differencing tasks was created and saved as
+"singleframe\_template\_diff.yaml". This \hspace{0pt}pipeline file,
+displayed in full in the attached notebook, contained the necessary
+configuration override to create a template based on only a single input
+image.\\
+\strut \\
+It was \hspace{0pt}executed at the USDF using the following:\\
+
+\begin{verbatim}
+pipetask run -b dp2_prep -i LSSTCam/runs/DRP/20250421_20250921/d_2025_11_10/DM-53195 -p singleframe_template_diff.yaml#makeTemplate,makeDiff -o u/jcarlin/single_vis_template2 --instrument lsst.obs.lsst.LsstCam --register-dataset-types -d "skymap='lsst_cells_v2' AND visit IN (2025092100028) AND detector=55 AND instrument='LSSTCam'" 2>&1 | tee singleframe_template_test.log
+\end{verbatim}
+
+\hfill\break
+
+
+}
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E4070-3 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Compare the difference imaging outputs from a single-exposure template
+to the DRP-created multi-exposure template, and confirm that the
+differencing behaved as expected.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+In the attached notebook, the original and "new" (single-exposure)
+templates are compared. We confirm that the DRP template included 33
+inputs, while the new template used only one input. The resulting
+difference image from the single-exposure template is noisier and less
+clean than the DRP difference image, as expected.\\
+\strut \\
+We have thus confirmed that single-exposure templates can be used in the
+DMS difference imaging pipelines.~
 
 
 }
