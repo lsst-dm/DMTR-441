@@ -38,7 +38,7 @@
 
 \title{LVV-P128: LDM-503-19 (All P1a and 1b DM requirements verified) Test Plan and Report}
 \setDocRef{\lsstDocType-\lsstDocNum}
-\date{ 2025-12-19 }
+\date{ 2026-01-05 }
 \author{ Jeffrey Carlin }
 
 \input{history_and_info.tex}
@@ -810,7 +810,7 @@ Jeffrey Carlin }
 \\ \hline
 
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T173}{LVV-T173}
-& {\small Leanne Guy } & {\small Leanne Guy } &
+& {\small Leanne Guy } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small  }
@@ -937,15 +937,6 @@ Jeffrey Carlin }
 
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T61}{LVV-T61}
 & {\small Jim Bosch } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small  }
-\medskip
-\end{minipage}
-\\ \hline
-
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T126}{LVV-T126}
-& {\small Jeffrey Carlin } & {\small Undefined } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small  }
@@ -2067,7 +2058,7 @@ None
 &
 \\
  \hfill Execution & LVV-E3844
-& Not Executed &
+& Pass &
 \begin{minipage}[]{9cm}
 \smallskip
 None
@@ -2240,18 +2231,6 @@ notebook is attached to this report\textquotesingle s github repo as
 &
 \\
  \hfill Execution & LVV-E3861
-& Not Executed &
-\begin{minipage}[]{9cm}
-\smallskip
-None
-\medskip
-\end{minipage}
-&
-     \\\hline
-  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page#!/v2/testCase/LVV-T126}{LVV-T126}
-&
-\\
- \hfill Execution & LVV-E3862
 & Not Executed &
 \begin{minipage}[]{9cm}
 \smallskip
@@ -8028,11 +8007,46 @@ nRawExpNightMax (2800) science exposures within a (24-nightDurationMax)
 \textbf{ Preconditions}:\\ None
 
 
-Execution status: {\bf Not Executed }\\
+Execution status: {\bf Pass }\\
 Final comment:\\None
 
 
 
+% Note Steps "Not Executed" and with No Result are not shown in this report if the flag is passed
+Detailed steps results LVV-R293-LVV-E3844-1319223116:\\
+  {
+
+\begin{tabular}{p{4cm}p{12cm}}
+\toprule
+Step LVV-E3844-1 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Execute single-day operations rehearsal, observe data products generated
+in time
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+None
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+We have been commissioning the system with LSSTCam for nearly a year,
+and have always been able to keep up with the daily processing with no
+major backlogs. We thus consider that demonstration that the pipeline
+throughput is sufficient for sustained observing.
+
+
+}
   % end if not not executed - no steps if not executed
 \paragraph{ LVV-T172 - Verify implementation of Optimization of Cost, Reliability and
 Availability }\mbox{}\\
@@ -8656,24 +8670,6 @@ test case in Jira.
 
 Verify that each Source record contains an ID that associates it with a
 best guess at the Object it corresponds to.
-
-\textbf{ Preconditions}:\\ None
-
-
-Execution status: {\bf Not Executed }\\
-Final comment:\\None
-
-
-
-  % end if not not executed - no steps if not executed
-\paragraph{ LVV-T126 - Verify implementation of Image Differencing with coadd templates }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Status \textbf{Approved}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T126}{\textit{ LVV-T126 } }
-test case in Jira.
-
-Verify that the DMS can perform image differencing from coadds.
 
 \textbf{ Preconditions}:\\ None
 
