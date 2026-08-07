@@ -26,8 +26,8 @@ jobs:
       - name: docugen
         env:
           ZEPHYR_TOKEN: ${{ secrets.ZEPHYR_TOKEN }}
-          JIRA_USER: ${{ secrets.JIRA_USER }}
-          JIRA_PASSWORD: ${{ secrets.JIRA_PASSWORD }}
+          JIRA_USER: ${{ secrets.JIRA_CLOUD_USER }}
+          JIRA_PASSWORD: ${{ secrets.JIRA_CLOUD_TOKEN }}
         run: |
           docsteady  --namespace DM generate-tpr LVV-P128  DMTR-441.tex
         shell: bash
