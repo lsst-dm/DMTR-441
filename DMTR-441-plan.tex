@@ -1,6 +1,6 @@
 % generated from JIRA project LVV
-% using template at /Users/womullan/LSSTgit/docsteady/src/docsteady/templates/tpnoresult.latex.jinja2.
-% using docsteady version 0.0.0
+% using template at /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/docsteady/templates/tpnoresult.latex.jinja2.
+% using docsteady version 3.1.4.dev1+g0f28ee970.d20251104
 % Please do not edit -- update information in Jira instead
 \documentclass[DM,lsstdraft,STR,toc]{lsstdoc}
 \usepackage{geometry}
@@ -31,7 +31,7 @@
 
 \title{LVV-P128: LDM-503-19 (All P1a and 1b DM requirements verified) Test Plan }
 \setDocRef{\lsstDocType-\lsstDocNum}
-\date{ 2025-10-20 }
+\date{ 2026-08-07 }
 \author{ Jeffrey Carlin }
 
 \input{history_and_info.tex}
@@ -91,6 +91,7 @@ appropriate.
 This document was generated from Jira, obtaining the relevant information from the
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testPlan/LVV-P128}{LVV-P128}
 ~Jira Test Plan and related Test Cycles (
+\href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCycle/LVV-R155}{LVV-R155}
 \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCycle/LVV-R293}{LVV-R293}
 ).
 
@@ -161,45 +162,69 @@ The personnel involved in the test campaign is shown in the following table.
 \hline
 \multicolumn{2}{r}{T. Plan \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testPlan/LVV-P128}{LVV-P128} owner:} &
 \multicolumn{2}{l}{\textbf{ Jeffrey Carlin } }\\\hline
+\multicolumn{2}{r}{T. Cycle \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCycle/LVV-R155}{LVV-R155} owner:} &
+\multicolumn{2}{l}{\textbf{
+Leanne Guy }
+} \\\hline
+\textbf{Test Cases} & \textbf{Assigned to} & \textbf{Executed by} & \textbf{Additional Test Personnel} \\ \hline
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E1104}{LVV-E1104}
+& {\small Jeffrey Kantor } & {\small Cristián Silva } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small Josh Hoblitt (Rubin Obs), Renata Frez (FIU/AmLight), Matt Kollross
+(NCSA) }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3138}{LVV-E3138}
+& {\small Robert Gruendl } & {\small Cristián Silva } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small b\textquotesingle\textquotesingle{} }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3143}{LVV-E3143}
+& {\small Jeffrey Kantor } & {\small Cristián Silva } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small Ron Lambert (LSST) }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3144}{LVV-E3144}
+& {\small Kian-Tat Lim } & {\small Cristián Silva } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small Ron Lambert (LSST), Albert Astudillo (REUNA), Jeronimo Bezerra
+(FIU/AmLight), Matt Kollross (NCSA) }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3145}{LVV-E3145}
+& {\small Cristián Silva } & {\small Cristián Silva } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small Heinrich Reinking (LSST), another LSST DM Person at Summit,
+Headquarters, or LDF }
+\medskip
+\end{minipage}
+\\ \hline
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3146}{LVV-E3146}
+& {\small Jeffrey Kantor } & {\small Cristián Silva } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small Ron Lambert (LSST), Greg Thayer (SLAC) }
+\medskip
+\end{minipage}
+\\ \hline
 \multicolumn{2}{r}{T. Cycle \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCycle/LVV-R293}{LVV-R293} owner:} &
 \multicolumn{2}{l}{\textbf{
 Jeffrey Carlin }
 } \\\hline
 \textbf{Test Cases} & \textbf{Assigned to} & \textbf{Executed by} & \textbf{Additional Test Personnel} \\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3755}{LVV-E3755}
-& {\small Leanne Guy } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small b\textquotesingle\textquotesingle{} }
-\medskip
-\end{minipage}
-\\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3756}{LVV-E3756}
-& {\small Leanne Guy } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small b\textquotesingle\textquotesingle{} }
-\medskip
-\end{minipage}
-\\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3757}{LVV-E3757}
-& {\small Jeffrey Carlin } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small b\textquotesingle\textquotesingle{} }
-\medskip
-\end{minipage}
-\\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3758}{LVV-E3758}
-& {\small Jeffrey Carlin } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small b\textquotesingle\textquotesingle{} }
-\medskip
-\end{minipage}
-\\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3759}{LVV-E3759}
-& {\small Jeffrey Carlin } & {\small Undefined } &
+& {\small Leanne Guy } & {\small William O'Mullane } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -223,39 +248,7 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3762}{LVV-E3762}
-& {\small Jeffrey Carlin } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small b\textquotesingle\textquotesingle{} }
-\medskip
-\end{minipage}
-\\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3763}{LVV-E3763}
-& {\small Jeffrey Carlin } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small b\textquotesingle\textquotesingle{} }
-\medskip
-\end{minipage}
-\\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3764}{LVV-E3764}
-& {\small Jeffrey Carlin } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small b\textquotesingle\textquotesingle{} }
-\medskip
-\end{minipage}
-\\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3765}{LVV-E3765}
-& {\small Leanne Guy } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small b\textquotesingle\textquotesingle{} }
-\medskip
-\end{minipage}
-\\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3766}{LVV-E3766}
-& {\small Leanne Guy } & {\small Undefined } &
+& {\small Jeffrey Carlin } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -263,7 +256,7 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3767}{LVV-E3767}
-& {\small Leanne Guy } & {\small Undefined } &
+& {\small Leanne Guy } & {\small Leanne Guy } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -279,7 +272,7 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3769}{LVV-E3769}
-& {\small Leanne Guy } & {\small Undefined } &
+& {\small Leanne Guy } & {\small Leanne Guy } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -287,7 +280,7 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3770}{LVV-E3770}
-& {\small Jeffrey Carlin } & {\small Undefined } &
+& {\small Jeffrey Carlin } & {\small William O'Mullane } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -295,7 +288,7 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3771}{LVV-E3771}
-& {\small Jeffrey Carlin } & {\small Undefined } &
+& {\small Jeffrey Carlin } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -303,7 +296,7 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3772}{LVV-E3772}
-& {\small Jeffrey Carlin } & {\small Undefined } &
+& {\small Jeffrey Carlin } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -311,7 +304,7 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3773}{LVV-E3773}
-& {\small Jeffrey Carlin } & {\small Undefined } &
+& {\small Jeffrey Carlin } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -319,7 +312,7 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3774}{LVV-E3774}
-& {\small Jeffrey Carlin } & {\small Undefined } &
+& {\small Jeffrey Carlin } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -327,7 +320,7 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3775}{LVV-E3775}
-& {\small Leanne Guy } & {\small Undefined } &
+& {\small Jeffrey Carlin } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -335,7 +328,7 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3781}{LVV-E3781}
-& {\small Leanne Guy } & {\small Undefined } &
+& {\small Leanne Guy } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -350,24 +343,8 @@ Jeffrey Carlin }
 \medskip
 \end{minipage}
 \\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3783}{LVV-E3783}
-& {\small Leanne Guy } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small b\textquotesingle\textquotesingle{} }
-\medskip
-\end{minipage}
-\\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3784}{LVV-E3784}
-& {\small Leanne Guy } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small b\textquotesingle\textquotesingle{} }
-\medskip
-\end{minipage}
-\\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3785}{LVV-E3785}
-& {\small Leanne Guy } & {\small Undefined } &
+& {\small Leanne Guy } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -376,22 +353,6 @@ Jeffrey Carlin }
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3787}{LVV-E3787}
 & {\small Jeffrey Carlin } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small b\textquotesingle\textquotesingle{} }
-\medskip
-\end{minipage}
-\\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3788}{LVV-E3788}
-& {\small Leanne Guy } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small b\textquotesingle\textquotesingle{} }
-\medskip
-\end{minipage}
-\\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3789}{LVV-E3789}
-& {\small Gregory Dubois-Felsmann } & {\small Undefined } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -422,14 +383,6 @@ Jeffrey Carlin }
 \medskip
 \end{minipage}
 \\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3793}{LVV-E3793}
-& {\small Jeffrey Carlin } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small b\textquotesingle\textquotesingle{} }
-\medskip
-\end{minipage}
-\\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3794}{LVV-E3794}
 & {\small Eric Bellm } & {\small Undefined } &
 \begin{minipage}[]{6cm}
@@ -438,24 +391,8 @@ Jeffrey Carlin }
 \medskip
 \end{minipage}
 \\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3795}{LVV-E3795}
-& {\small Melissa Graham } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small b\textquotesingle\textquotesingle{} }
-\medskip
-\end{minipage}
-\\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3796}{LVV-E3796}
-& {\small Eric Bellm } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small b\textquotesingle\textquotesingle{} }
-\medskip
-\end{minipage}
-\\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3797}{LVV-E3797}
-& {\small Leanne Guy } & {\small Undefined } &
+& {\small Leanne Guy } & {\small William O'Mullane } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -463,31 +400,7 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3798}{LVV-E3798}
-& {\small Leanne Guy } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small b\textquotesingle\textquotesingle{} }
-\medskip
-\end{minipage}
-\\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3799}{LVV-E3799}
-& {\small Jeffrey Carlin } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small b\textquotesingle\textquotesingle{} }
-\medskip
-\end{minipage}
-\\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3800}{LVV-E3800}
-& {\small Jeffrey Carlin } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small b\textquotesingle\textquotesingle{} }
-\medskip
-\end{minipage}
-\\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3801}{LVV-E3801}
-& {\small Leanne Guy } & {\small Undefined } &
+& {\small Leanne Guy } & {\small William O'Mullane } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -503,7 +416,7 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3803}{LVV-E3803}
-& {\small Jeffrey Carlin } & {\small Undefined } &
+& {\small Jeffrey Carlin } & {\small William O'Mullane } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -511,7 +424,7 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3804}{LVV-E3804}
-& {\small Robert Gruendl } & {\small Undefined } &
+& {\small Jeffrey Carlin } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -542,22 +455,6 @@ Jeffrey Carlin }
 \medskip
 \end{minipage}
 \\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3808}{LVV-E3808}
-& {\small Eric Bellm } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small b\textquotesingle\textquotesingle{} }
-\medskip
-\end{minipage}
-\\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3809}{LVV-E3809}
-& {\small Jeffrey Carlin } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small b\textquotesingle\textquotesingle{} }
-\medskip
-\end{minipage}
-\\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3810}{LVV-E3810}
 & {\small Eric Bellm } & {\small Undefined } &
 \begin{minipage}[]{6cm}
@@ -566,16 +463,8 @@ Jeffrey Carlin }
 \medskip
 \end{minipage}
 \\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3811}{LVV-E3811}
-& {\small Jeffrey Carlin } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small b\textquotesingle\textquotesingle{} }
-\medskip
-\end{minipage}
-\\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3812}{LVV-E3812}
-& {\small Jeffrey Carlin } & {\small Undefined } &
+& {\small Jeffrey Carlin } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -599,7 +488,7 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3815}{LVV-E3815}
-& {\small Jeffrey Carlin } & {\small Undefined } &
+& {\small Jeffrey Carlin } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -607,7 +496,7 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3816}{LVV-E3816}
-& {\small Jeffrey Carlin } & {\small Undefined } &
+& {\small Jeffrey Carlin } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -615,7 +504,7 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3817}{LVV-E3817}
-& {\small Eric Bellm } & {\small Undefined } &
+& {\small Eric Bellm } & {\small Leanne Guy } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -624,22 +513,6 @@ Jeffrey Carlin }
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3818}{LVV-E3818}
 & {\small Eric Bellm } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small b\textquotesingle\textquotesingle{} }
-\medskip
-\end{minipage}
-\\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3819}{LVV-E3819}
-& {\small Leanne Guy } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small b\textquotesingle\textquotesingle{} }
-\medskip
-\end{minipage}
-\\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3820}{LVV-E3820}
-& {\small Leanne Guy } & {\small Undefined } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -655,7 +528,7 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3822}{LVV-E3822}
-& {\small Eric Bellm } & {\small Undefined } &
+& {\small Eric Bellm } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -687,24 +560,15 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3826}{LVV-E3826}
-& {\small Leanne Guy } & {\small Undefined } &
+& {\small Leanne Guy } & {\small William O'Mullane } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
 \medskip
 \end{minipage}
 \\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3827}{LVV-E3827}
-& {\small Leanne Guy } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small Ron Lambert (LSST), Albert Astudillo (REUNA), Jeronimo Bezerra
-(FIU/AmLight), Matt Kollross (NCSA) }
-\medskip
-\end{minipage}
-\\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3828}{LVV-E3828}
-& {\small Leanne Guy } & {\small Undefined } &
+& {\small Leanne Guy } & {\small Cristián Silva } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small Ron Lambert (LSST), Albert Astudillo (REUNA), Jeronimo Bezerra
@@ -713,7 +577,7 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3829}{LVV-E3829}
-& {\small Leanne Guy } & {\small Undefined } &
+& {\small Leanne Guy } & {\small Cristián Silva } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small Ron Lambert (LSST), Albert Astudillo (REUNA), Jeronimo Bezerra
@@ -722,7 +586,7 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3830}{LVV-E3830}
-& {\small Leanne Guy } & {\small Undefined } &
+& {\small Leanne Guy } & {\small Cristián Silva } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small Ron Lambert (LSST), Albert Astudillo (REUNA), Jeronimo Bezerra
@@ -732,15 +596,6 @@ Jeffrey Carlin }
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3831}{LVV-E3831}
 & {\small Jeffrey Kantor } & {\small Cristián Silva } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small Josh Hoblitt (Rubin Obs), Renata Frez (FIU/AmLight), Matt Kollross
-(NCSA) }
-\medskip
-\end{minipage}
-\\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3832}{LVV-E3832}
-& {\small Leanne Guy } & {\small Undefined } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small Josh Hoblitt (Rubin Obs), Renata Frez (FIU/AmLight), Matt Kollross
@@ -774,14 +629,6 @@ Jeffrey Carlin }
 \medskip
 \end{minipage}
 \\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3836}{LVV-E3836}
-& {\small Leanne Guy } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small Ron Lambert (LSST) }
-\medskip
-\end{minipage}
-\\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3837}{LVV-E3837}
 & {\small Jeffrey Kantor } & {\small Cristián Silva } &
 \begin{minipage}[]{6cm}
@@ -799,7 +646,7 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3839}{LVV-E3839}
-& {\small Leanne Guy } & {\small Undefined } &
+& {\small Leanne Guy } & {\small William O'Mullane } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -807,7 +654,7 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3840}{LVV-E3840}
-& {\small Leanne Guy } & {\small Undefined } &
+& {\small Leanne Guy } & {\small William O'Mullane } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -815,7 +662,7 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3841}{LVV-E3841}
-& {\small Robert Gruendl } & {\small Undefined } &
+& {\small Robert Gruendl } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -823,7 +670,7 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3842}{LVV-E3842}
-& {\small Robert Gruendl } & {\small Undefined } &
+& {\small Robert Gruendl } & {\small Cristián Silva } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -831,7 +678,7 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3843}{LVV-E3843}
-& {\small Leanne Guy } & {\small Undefined } &
+& {\small Leanne Guy } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -839,7 +686,7 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3844}{LVV-E3844}
-& {\small Leanne Guy } & {\small Leanne Guy } &
+& {\small Leanne Guy } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -847,7 +694,7 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3845}{LVV-E3845}
-& {\small Robert Gruendl } & {\small Undefined } &
+& {\small William O'Mullane } & {\small William O'Mullane } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -863,7 +710,7 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3848}{LVV-E3848}
-& {\small Jeffrey Carlin } & {\small Undefined } &
+& {\small Jeffrey Carlin } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -902,16 +749,8 @@ Jeffrey Carlin }
 \medskip
 \end{minipage}
 \\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3853}{LVV-E3853}
-& {\small Eric Bellm } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small b\textquotesingle\textquotesingle{} }
-\medskip
-\end{minipage}
-\\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3854}{LVV-E3854}
-& {\small Jeffrey Carlin } & {\small Undefined } &
+& {\small Jeffrey Carlin } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -934,16 +773,8 @@ Jeffrey Carlin }
 \medskip
 \end{minipage}
 \\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3857}{LVV-E3857}
-& {\small Jeffrey Carlin } & {\small Leanne Guy } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small b\textquotesingle\textquotesingle{} }
-\medskip
-\end{minipage}
-\\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3858}{LVV-E3858}
-& {\small Jeffrey Carlin } & {\small Leanne Guy } &
+& {\small Jeffrey Carlin } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -951,7 +782,7 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3859}{LVV-E3859}
-& {\small Jeffrey Carlin } & {\small Undefined } &
+& {\small Jeffrey Carlin } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -959,23 +790,7 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3860}{LVV-E3860}
-& {\small Jeffrey Carlin } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small b\textquotesingle\textquotesingle{} }
-\medskip
-\end{minipage}
-\\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3861}{LVV-E3861}
-& {\small Jim Bosch } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small b\textquotesingle\textquotesingle{} }
-\medskip
-\end{minipage}
-\\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3862}{LVV-E3862}
-& {\small Jeffrey Carlin } & {\small Undefined } &
+& {\small Jeffrey Carlin } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -990,38 +805,6 @@ Jeffrey Carlin }
 \medskip
 \end{minipage}
 \\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3864}{LVV-E3864}
-& {\small Jeffrey Carlin } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small b\textquotesingle\textquotesingle{} }
-\medskip
-\end{minipage}
-\\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3865}{LVV-E3865}
-& {\small Eric Bellm } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small b\textquotesingle\textquotesingle{} }
-\medskip
-\end{minipage}
-\\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3866}{LVV-E3866}
-& {\small Eric Bellm } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small b\textquotesingle\textquotesingle{} }
-\medskip
-\end{minipage}
-\\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3867}{LVV-E3867}
-& {\small Melissa Graham } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small b\textquotesingle\textquotesingle{} }
-\medskip
-\end{minipage}
-\\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3868}{LVV-E3868}
 & {\small Kian-Tat Lim } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
@@ -1030,39 +813,7 @@ Jeffrey Carlin }
 \medskip
 \end{minipage}
 \\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3869}{LVV-E3869}
-& {\small Jeffrey Carlin } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small b\textquotesingle\textquotesingle{} }
-\medskip
-\end{minipage}
-\\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3870}{LVV-E3870}
-& {\small Jeffrey Carlin } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small b\textquotesingle\textquotesingle{} }
-\medskip
-\end{minipage}
-\\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3871}{LVV-E3871}
-& {\small Jeffrey Carlin } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small b\textquotesingle\textquotesingle{} }
-\medskip
-\end{minipage}
-\\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3872}{LVV-E3872}
-& {\small Leanne Guy } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small b\textquotesingle\textquotesingle{} }
-\medskip
-\end{minipage}
-\\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3873}{LVV-E3873}
 & {\small Leanne Guy } & {\small Undefined } &
 \begin{minipage}[]{6cm}
 \smallskip
@@ -1134,30 +885,6 @@ Jeffrey Carlin }
 \medskip
 \end{minipage}
 \\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E4049}{LVV-E4049}
-& {\small Jeffrey Carlin } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small b\textquotesingle\textquotesingle{} }
-\medskip
-\end{minipage}
-\\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E4050}{LVV-E4050}
-& {\small Kian-Tat Lim } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small b\textquotesingle\textquotesingle{} }
-\medskip
-\end{minipage}
-\\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E4051}{LVV-E4051}
-& {\small Eric Bellm } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small b\textquotesingle\textquotesingle{} }
-\medskip
-\end{minipage}
-\\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E4052}{LVV-E4052}
 & {\small Leanne Guy } & {\small Leanne Guy } &
 \begin{minipage}[]{6cm}
@@ -1167,23 +894,7 @@ Jeffrey Carlin }
 \end{minipage}
 \\ \hline
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E4053}{LVV-E4053}
-& {\small Colin Slater } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small b\textquotesingle\textquotesingle{} }
-\medskip
-\end{minipage}
-\\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E4054}{LVV-E4054}
-& {\small Leanne Guy } & {\small Undefined } &
-\begin{minipage}[]{6cm}
-\smallskip
-{\small b\textquotesingle\textquotesingle{} }
-\medskip
-\end{minipage}
-\\ \hline
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E4055}{LVV-E4055}
-& {\small Leanne Guy } & {\small Undefined } &
+& {\small Colin Slater } & {\small Jeffrey Carlin } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small b\textquotesingle\textquotesingle{} }
@@ -1254,6 +965,14 @@ Jeffrey Carlin }
 \medskip
 \end{minipage}
 \\ \hline
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E4070}{LVV-E4070}
+& {\small Jeffrey Carlin } & {\small Jeffrey Carlin } &
+\begin{minipage}[]{6cm}
+\smallskip
+{\small b\textquotesingle\textquotesingle{} }
+\medskip
+\end{minipage}
+\\ \hline
 \end{longtable}
 }
 
@@ -1270,22 +989,32 @@ Jeffrey Carlin }
 \toprule
 \multicolumn{2}{r}{ T. Plan \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testPlan/LVV-P128}{LVV-P128}:} &
 \multicolumn{2}{p{10.9cm}}{\textbf{ LDM-503-19 (All P1a and 1b DM requirements verified) }} & Approved \\\hline
+\multicolumn{2}{r}{ T. Cycle \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCycle/LVV-R155}{LVV-R155}:} &
+\multicolumn{2}{p{10.9cm}}{\textbf{ Network Acceptance Test Campaign 1 }} & Done \\\hline
+\textbf{Test Cases} &  \textbf{Ver.}  \\\toprule
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E1104}{LVV-E1104}
+&  1.0(d)
+\\
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3138}{LVV-E3138}
+&  1.0(d)
+\\
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3143}{LVV-E3143}
+&  1.0(d)
+\\
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3144}{LVV-E3144}
+&  1.0(d)
+\\
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3145}{LVV-E3145}
+&  1.0(d)
+\\
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3146}{LVV-E3146}
+&  1.0(d)
+\\
+\\\hline
 \multicolumn{2}{r}{ T. Cycle \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCycle/LVV-R293}{LVV-R293}:} &
 \multicolumn{2}{p{10.9cm}}{\textbf{ LDM-503-19 (All P1a and 1b DM requirements verified) }} & In Progress \\\hline
 \textbf{Test Cases} &  \textbf{Ver.}  \\\toprule
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3755}{LVV-E3755}
-&  1.0(d)
-\\
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3756}{LVV-E3756}
-&  1.0(d)
-\\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3757}{LVV-E3757}
-&  1.0(d)
-\\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3758}{LVV-E3758}
-&  1.0(d)
-\\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3759}{LVV-E3759}
 &  1.0(d)
 \\
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3760}{LVV-E3760}
@@ -1295,18 +1024,6 @@ Jeffrey Carlin }
 &  1.0(d)
 \\
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3762}{LVV-E3762}
-&  1.0(d)
-\\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3763}{LVV-E3763}
-&  1.0(d)
-\\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3764}{LVV-E3764}
-&  1.0(d)
-\\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3765}{LVV-E3765}
-&  1.0(d)
-\\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3766}{LVV-E3766}
 &  1.0(d)
 \\
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3767}{LVV-E3767}
@@ -1342,22 +1059,10 @@ Jeffrey Carlin }
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3782}{LVV-E3782}
 &  1.0(d)
 \\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3783}{LVV-E3783}
-&  1.0(d)
-\\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3784}{LVV-E3784}
-&  1.0(d)
-\\
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3785}{LVV-E3785}
 &  1.0(d)
 \\
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3787}{LVV-E3787}
-&  1.0(d)
-\\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3788}{LVV-E3788}
-&  1.0(d)
-\\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3789}{LVV-E3789}
 &  1.0(d)
 \\
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3790}{LVV-E3790}
@@ -1369,31 +1074,13 @@ Jeffrey Carlin }
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3792}{LVV-E3792}
 &  1.0(d)
 \\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3793}{LVV-E3793}
-&  1.0(d)
-\\
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3794}{LVV-E3794}
-&  1.0(d)
-\\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3795}{LVV-E3795}
-&  1.0(d)
-\\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3796}{LVV-E3796}
 &  1.0(d)
 \\
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3797}{LVV-E3797}
 &  1.0(d)
 \\
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3798}{LVV-E3798}
-&  1.0(d)
-\\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3799}{LVV-E3799}
-&  1.0(d)
-\\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3800}{LVV-E3800}
-&  1.0(d)
-\\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3801}{LVV-E3801}
 &  1.0(d)
 \\
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3802}{LVV-E3802}
@@ -1414,16 +1101,7 @@ Jeffrey Carlin }
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3807}{LVV-E3807}
 &  1.0(d)
 \\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3808}{LVV-E3808}
-&  1.0(d)
-\\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3809}{LVV-E3809}
-&  1.0(d)
-\\
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3810}{LVV-E3810}
-&  1.0(d)
-\\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3811}{LVV-E3811}
 &  1.0(d)
 \\
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3812}{LVV-E3812}
@@ -1447,12 +1125,6 @@ Jeffrey Carlin }
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3818}{LVV-E3818}
 &  1.0(d)
 \\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3819}{LVV-E3819}
-&  1.0(d)
-\\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3820}{LVV-E3820}
-&  1.0(d)
-\\
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3821}{LVV-E3821}
 &  1.0(d)
 \\
@@ -1471,9 +1143,6 @@ Jeffrey Carlin }
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3826}{LVV-E3826}
 &  1.0(d)
 \\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3827}{LVV-E3827}
-&  1.0(d)
-\\
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3828}{LVV-E3828}
 &  1.0(d)
 \\
@@ -1486,9 +1155,6 @@ Jeffrey Carlin }
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3831}{LVV-E3831}
 &  1.0(d)
 \\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3832}{LVV-E3832}
-&  1.0(d)
-\\
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3833}{LVV-E3833}
 &  1.0(d)
 \\
@@ -1496,9 +1162,6 @@ Jeffrey Carlin }
 &  1.0(d)
 \\
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3835}{LVV-E3835}
-&  1.0(d)
-\\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3836}{LVV-E3836}
 &  1.0(d)
 \\
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3837}{LVV-E3837}
@@ -1546,9 +1209,6 @@ Jeffrey Carlin }
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3852}{LVV-E3852}
 &  1.0(d)
 \\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3853}{LVV-E3853}
-&  1.0(d)
-\\
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3854}{LVV-E3854}
 &  1.0(d)
 \\
@@ -1556,9 +1216,6 @@ Jeffrey Carlin }
 &  1.0(d)
 \\
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3856}{LVV-E3856}
-&  1.0(d)
-\\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3857}{LVV-E3857}
 &  1.0(d)
 \\
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3858}{LVV-E3858}
@@ -1570,43 +1227,13 @@ Jeffrey Carlin }
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3860}{LVV-E3860}
 &  1.0(d)
 \\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3861}{LVV-E3861}
-&  1.0(d)
-\\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3862}{LVV-E3862}
-&  1.0(d)
-\\
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3863}{LVV-E3863}
-&  1.0(d)
-\\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3864}{LVV-E3864}
-&  1.0(d)
-\\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3865}{LVV-E3865}
-&  1.0(d)
-\\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3866}{LVV-E3866}
-&  1.0(d)
-\\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3867}{LVV-E3867}
 &  1.0(d)
 \\
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3868}{LVV-E3868}
 &  1.0(d)
 \\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3869}{LVV-E3869}
-&  1.0(d)
-\\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3870}{LVV-E3870}
-&  1.0(d)
-\\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3871}{LVV-E3871}
-&  1.0(d)
-\\
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3872}{LVV-E3872}
-&  1.0(d)
-\\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3873}{LVV-E3873}
 &  1.0(d)
 \\
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3874}{LVV-E3874}
@@ -1633,25 +1260,10 @@ Jeffrey Carlin }
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E4048}{LVV-E4048}
 &  1.0(d)
 \\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E4049}{LVV-E4049}
-&  1.0(d)
-\\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E4050}{LVV-E4050}
-&  1.0(d)
-\\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E4051}{LVV-E4051}
-&  1.0(d)
-\\
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E4052}{LVV-E4052}
 &  1.0(d)
 \\
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E4053}{LVV-E4053}
-&  1.0(d)
-\\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E4054}{LVV-E4054}
-&  1.0(d)
-\\
-\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E4055}{LVV-E4055}
 &  1.0(d)
 \\
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E4057}{LVV-E4057}
@@ -1678,6 +1290,9 @@ Jeffrey Carlin }
 \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E4069}{LVV-E4069}
 &  1.0(d)
 \\
+\href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E4070}{LVV-E4070}
+&  1.0(d)
+\\
 \\\hline
 \caption{Test Campaign Summary}
 \label{table:summary}
@@ -1695,6 +1310,233 @@ None
 \newpage
 \section{Detailed Tests}
 \label{sect:detailedtests}
+
+\subsection{Test Cycle LVV-R155 }
+
+Open test cycle {\it \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/testPlayer/LVV-R155}{Network Acceptance Test Campaign 1}} in Jira.
+
+Test Cycle name: Network Acceptance Test Campaign 1\\
+Status: Done
+
+This test cycle includes the list of test cases required to verify the
+network infrastructure without encryption
+
+\subsubsection{Software Version/Baseline}
+b\textquotesingle\textquotesingle{}
+
+\subsubsection{Configuration}
+b\textquotesingle\textquotesingle{}
+
+\subsubsection{Test Cases in LVV-R155 Test Cycle}
+
+\paragraph{ LVV-E1104 - Verify implementation of Base to Archive Network Reliability }\mbox{}\\
+
+Version \textbf{1.0(d)}.
+Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E1104}{\textit{ LVV-E1104 } }
+test case in Jira.
+
+Verify Base to Archive Network Reliability by demonstrating that the
+network can recover from outages within baseToArchNetMTTR =
+48{[}hour{]}.
+
+\textbf{ Preconditions}:\\
+\begin{enumerate}
+\tightlist
+\item
+  Archiver/Forwarders are configured at Base, connected to REUNA DWDM,
+  loaded with simulated or pre-cursor data, running on end node
+  computers that are the production hardware or equivalent to it.
+\item
+  Archiver/Forwarder receivers or other capability is on configured at
+  LDF, connected to Base - Archive Network, running on end node
+  computers that are the production hardware or equivalent to it.
+\item
+  At least 6 months of monitoring data for this link is available.
+\item
+  As-built documentation for all of the above is available.
+\end{enumerate}
+
+NOTE: This test will be repeated at increasing data volumes as
+additional observatory capabilities (e.g. ComCAM, FullCam) become
+available. Final verification will be tested at full operational volume.
+After the initial test, the corresponding verification elements will be
+flagged as ``Requires Monitoring'' such that those requirements will be
+closed out as having been verified but will continue to be monitored
+throughout commissioning to ensure they do not drop out of compliance.
+This will also be monitored for end to end Summit - Data Facility
+transfers during Commissioning.\\
+\strut \\
+
+Final comment:\\None
+
+
+Detailed steps :
+
+\paragraph{ LVV-E3138 - Verify implementation of Summit Facility Infrastructure }\mbox{}\\
+
+Version \textbf{1.0(d)}.
+Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3138}{\textit{ LVV-E3138 } }
+test case in Jira.
+
+Verify that the Summit Facility ~provides sufficient computing, storage,
+and network infrastructure to support buffering and forwarding of all
+raw image data to the Archive Facility, and compute facilities to
+support Commissioning activities.~
+
+\textbf{ Preconditions}:\\
+Summit facility in place
+
+Final comment:\\None
+
+
+Detailed steps :
+
+\paragraph{ LVV-E3143 - Verify implementation of Summit to Base Network Secondary Link }\mbox{}\\
+
+Version \textbf{1.0(d)}.
+Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3143}{\textit{ LVV-E3143 } }
+test case in Jira.
+
+Verify automated fail-over from primary to secondary equipment in Rubin
+Observatory DWDM on simulated failure of primary. ~Verify bandwidth
+sufficiency on secondary. ~Verify automated recovery to primary
+equipment on simulated restoration of primary. ~Repeat for failure of
+Rubin Observatory fiber and fail-over to AURA fiber and DWDM.
+~Demonstrate use of secondary in "catch-up" mode.
+
+\textbf{ Preconditions}:\\
+\begin{enumerate}
+\tightlist
+\item
+  PMCS DMTC-7400-2400 complete.
+\item
+  As-built documentation for Summit - Base Network is available.
+\end{enumerate}
+
+NOTE: After the initial test, the corresponding verification elements
+will be flagged as ``Requires Monitoring'' such that those requirements
+will be closed out as having been verified but will continue to be
+monitored throughout commissioning to ensure they do not drop out of
+compliance. This will also be monitored for end to end Summit - Data
+Facility transfers during Commissioning.
+
+Final comment:\\None
+
+
+Detailed steps :
+
+\paragraph{ LVV-E3144 - Verify implementation of Archive to Data Access Center Network Secondary
+Link }\mbox{}\\
+
+Version \textbf{1.0(d)}.
+Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3144}{\textit{ LVV-E3144 } }
+test case in Jira.
+
+Verify the Archive to Data Access Center Network via Secondary Link by
+simulating a failure on the primary path and capacity on the secondary
+path.
+
+\textbf{ Preconditions}:\\
+\begin{enumerate}
+\tightlist
+\item
+  Data is staged in LDF and data transfer capabilities to US DAC and
+  Chilean DAC are in place, running on end node computers that are the
+  production hardware or equivalent to it.
+\item
+  As-built documentation for all of the above is available.
+\end{enumerate}
+
+NOTE: This test will be repeated at increasing data volumes as
+additional observatory capabilities (e.g. ComCAM, FullCam) become
+available. Final verification will be tested at full operational volume.
+After the initial test, the corresponding verification elements will be
+flagged as ``Requires Monitoring'' such that those requirements will be
+closed out as having been verified but will continue to be monitored
+throughout commissioning to ensure they do not drop out of compliance.
+This will also be monitored for end to end Summit - Data Facility
+transfers during Commissioning.\\
+\strut \\
+
+Final comment:\\None
+
+
+Detailed steps :
+
+\paragraph{ LVV-E3145 - Verify Base Voice Over IP (VOIP) }\mbox{}\\
+
+Version \textbf{1.0(d)}.
+Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3145}{\textit{ LVV-E3145 } }
+test case in Jira.
+
+Verify as-built VOIP at the Base Facility is operational and performs as
+expected (i.e. sufficient number of extensions allocated properly, no
+frequent drop-outs, no frequent jaggies on video, etc.) on both voice
+calls and videoconferening.
+
+\textbf{ Preconditions}:\\
+\begin{enumerate}
+\tightlist
+\item
+  Base VOIP is installed/configured and Test Personnel have phone sets.
+  ~Base Videoconference system is installed/configured. ~Summit,
+  Headquarters, and/or LDF Videconference system is
+  installed/configured.
+\item
+  As-built documentation for all of the above is available.
+\end{enumerate}
+
+Final comment:\\None
+
+
+Detailed steps :
+
+\paragraph{ LVV-E3146 - Verify Summit - Base Network Integration (System Level) }\mbox{}\\
+
+Version \textbf{1.0(d)}.
+Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3146}{\textit{ LVV-E3146 } }
+test case in Jira.
+
+Verify ISO Layer 3 full (22 x 10 Gbps ethernet ports on DAQ side with
+test data from DAQ test stand, AURA, Camera DAQ team do test).
+Demonstrate transfer of data at or exceeding rates specified in \citeds{LDM-142}.
+
+\textbf{ Preconditions}:\\
+\begin{enumerate}
+\tightlist
+\item
+  PMCS DMTC-7400-2400 COMPLETE
+\item
+  \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/1401}{LVV-T1168}
+  Passed
+\item
+  EITHER: Full Camera DAQ installed on summit and loaded with data OR:
+  high-quality DAQ application-level simulators that match the form,
+  volume, file paths, compressibility, and cadence of the expected
+  instrument data, running on end node computers that are the production
+  hardware or equivalent to it. Scientific validity of the data content
+  is not essential.
+\item
+  Archiver/forwarders installed at Base running on end node computers
+  that are the production hardware or equivalent to it.
+\item
+  As-built documentation for all of the above is available.
+\end{enumerate}
+
+NOTE: This test will be repeated at increasing data volumes as
+additional observatory capabilities (e.g. ComCAM, FullCam) become
+available. Final verification will be tested at full operational
+volume.After the initial test, the corresponding verification elements
+will be flagged as ``Requires Monitoring'' such that those requirements
+will be closed out as having been verified but will continue to be
+monitored throughout commissioning to ensure they do not drop out of
+compliance. This will also be monitored for end to end Summit - Data
+Facility transfers during Commissioning.
+
+Final comment:\\None
+
+
+Detailed steps :
 
 \subsection{Test Cycle LVV-R293 }
 
@@ -1714,24 +1556,6 @@ b\textquotesingle\textquotesingle{}
 
 \subsubsection{Test Cases in LVV-R293 Test Cycle}
 
-\paragraph{ LVV-E3755 - Verify regeneration of un-archived Data Products (Services)\_1 }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3755}{\textit{ LVV-E3755 } }
-test case in Jira.
-
-Verify that unarchived Level 1 and Level 2 data products can be
-regenerated on-demand using and IVOA-standards based service that usese
-archived inputs and provenance data.~
-
-\textbf{ Preconditions}:\\
-None
-
-Final comment:\\None
-
-
-Detailed steps :
-
 \paragraph{ LVV-E3756 - Verify the archiving of ancilliary data }\mbox{}\\
 
 Version \textbf{1.0(d)}.
@@ -1741,61 +1565,6 @@ test case in Jira.
 Verufy that the Science Data Archive ~contains all necessary engineering
 and calibration data for the full understanding of the performance and
 operation of the Observatory.
-
-\textbf{ Preconditions}:\\
-None
-
-Final comment:\\None
-
-
-Detailed steps :
-
-\paragraph{ LVV-E3757 - Verify re-run on different system produces the same results }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3757}{\textit{ LVV-E3757 } }
-test case in Jira.
-
-Verify that tools are provided to use the archived provenance data to
-re-run a data processing operation on different systems, and that the
-results produced are the same to the extent computationally feasible.~
-
-\textbf{ Preconditions}:\\
-None
-
-Final comment:\\None
-
-
-Detailed steps :
-
-\paragraph{ LVV-E3758 - Verify re-run on similar system produces the same results }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3758}{\textit{ LVV-E3758 } }
-test case in Jira.
-
-Verify that a provenance-based re-run that is run on the same system, or
-a system with identically configured hardware and system software,
-produces the same results.~
-
-\textbf{ Preconditions}:\\
-None
-
-Final comment:\\None
-
-
-Detailed steps :
-
-\paragraph{ LVV-E3759 - Verify availability of re-run tools }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3759}{\textit{ LVV-E3759 } }
-test case in Jira.
-
-Verify that tools are provided to use the archived provenance data to
-re-run a data processing operation under the same conditions (including
-LSST software version, its configuration parameters, and supporting data
-such as calibration frames) as a previous run of that operation.
 
 \textbf{ Preconditions}:\\
 None
@@ -1848,84 +1617,6 @@ test case in Jira.
 Verify that the LSST Science Platform supports the visualization of the
 LSST-generated MOCs as well as other MOCs which satisfy the IVOA MOC
 Recommendation.
-
-\textbf{ Preconditions}:\\
-None
-
-Final comment:\\None
-
-
-Detailed steps :
-
-\paragraph{ LVV-E3763 - Verify Implementation of Exporting MOCs as FITS }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3763}{\textit{ LVV-E3763 } }
-test case in Jira.
-
-Verify that the Data Management system provides a means for exporting
-the LSST-generated MOCs in the FITS serialization form defined in the
-IVOA MOC Recommendation.
-
-\textbf{ Preconditions}:\\
-None
-
-Final comment:\\None
-
-
-Detailed steps :
-
-\paragraph{ LVV-E3764 - Verify Production of Multi-Order Coverage Maps for Survey Data }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3764}{\textit{ LVV-E3764 } }
-test case in Jira.
-
-Verify that Data Release Production includes the production of
-Multi-Order Coverage maps for the survey data, conformant with the IVOA
-MOC recommendation. ~Confirm that separate MOC are produced for each
-filter band for the main survey, and additional MOCs are produced to
-represent special-programs datasets and other collections of on-sky
-data.
-
-\textbf{ Preconditions}:\\
-None
-
-Final comment:\\None
-
-
-Detailed steps :
-
-\paragraph{ LVV-E3765 - Verify HiPS Visualization in the RSP Notebook Aspect }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3765}{\textit{ LVV-E3765 } }
-test case in Jira.
-
-The Rubin Science Platform shall support the visualization of the
-LSST-generated HiPS image maps as well as other HiPS maps which satisfy
-the IVOA HiPS Recommendation, and shall provide integrated behavior,
-such as the overplotting of catalog entries, comparable to that provided
-for individual source images (e.g., PVIs and coadd tiles).
-
-\textbf{ Preconditions}:\\
-None
-
-Final comment:\\None
-
-
-Detailed steps :
-
-\paragraph{ LVV-E3766 - Verify implementation of maximum time for retrieval of CCD-sized coadd
-cutouts }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3766}{\textit{ LVV-E3766 } }
-test case in Jira.
-
-Verify that at least \textbf{ccdRetrievalUsers = 20~}users can retrieve
-CCD-sized coadd cutouts using the IVOA SODA protocol within a maximum
-retrieval time of~\textbf{ccdRetrievalTime = 15 seconds}.
 
 \textbf{ Preconditions}:\\
 None
@@ -2026,7 +1717,11 @@ DMS and applied to the appropriate metrics.
 \textbf{ Preconditions}:\\
 None
 
-Final comment:\\None
+Final comment:\\Test executed using a ticket branch that has not yet been merged to the
+pipelines codebase, running w\_2025\_37 of the science pipelines at the
+USDF. Results of the test are attached to this
+document\textquotesingle s repository as
+test\_LVV-T376\_T2176\_T2177.ipynb.
 
 
 Detailed steps :
@@ -2047,7 +1742,10 @@ the requirement that it shall be no greater than \textbf{TE1 =
 \textbf{ Preconditions}:\\
 None
 
-Final comment:\\None
+Final comment:\\Test executed using a ticket branch that has not yet been merged to the
+pipelines codebase, running w\_2025\_37 of the science pipelines at the
+USDF. Results of the test are attached to this
+document\textquotesingle s repository as test\_LVV-T1755.ipynb.
 
 
 Detailed steps :
@@ -2066,7 +1764,11 @@ configured in the DMS and applied to the appropriate metrics
 \textbf{ Preconditions}:\\
 None
 
-Final comment:\\None
+Final comment:\\Test executed using a ticket branch that has not yet been merged to the
+pipelines codebase, running w\_2025\_37 of the science pipelines at the
+USDF. Results of the test are attached to this
+document\textquotesingle s repository as
+test\_LVV-T376\_T2176\_T2177.ipynb.
 
 
 Detailed steps :
@@ -2087,7 +1789,10 @@ whether it meets the requirement that it shall be no greater than
 \textbf{ Preconditions}:\\
 None
 
-Final comment:\\None
+Final comment:\\Test executed using a ticket branch that has not yet been merged to the
+pipelines codebase, running w\_2025\_37 of the science pipelines at the
+USDF. Results of the test are attached to this
+document\textquotesingle s repository as test\_LVV-T1754.ipynb.
 
 
 Detailed steps :
@@ -2104,7 +1809,11 @@ ellipticity residuals and correlation metrics defined in the OSS.~
 \textbf{ Preconditions}:\\
 None
 
-Final comment:\\None
+Final comment:\\Test executed using a ticket branch that has not yet been merged to the
+pipelines codebase, running w\_2025\_37 of the science pipelines at the
+USDF. Results of the test are attached to this
+document\textquotesingle s repository as
+test\_LVV-T376\_T2176\_T2177.ipynb.
 
 
 Detailed steps :
@@ -2137,44 +1846,6 @@ Verify the response time ~(IvQueryTime) for queries that are spatially
 restricted to a circle of radius \textbf{lvSkyRadius and~}that return at
 most lvMaxReturnedResults of data~ under a load of lvQueryUsers
 simultaneous queries.
-
-\textbf{ Preconditions}:\\
-None
-
-Final comment:\\None
-
-
-Detailed steps :
-
-\paragraph{ LVV-E3783 - Verify the minimum number of simultaneous users querying the prompt
-products database. }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3783}{\textit{ LVV-E3783 } }
-test case in Jira.
-
-Verify that the minimum number of simultaneous users querying the prompt
-products database that can be supported is \textbf{1QueryUsers =
-20{[}integer{]}} , assuming that the query lasts no more than
-\textbf{l1QueryTime}.
-
-\textbf{ Preconditions}:\\
-None
-
-Final comment:\\None
-
-
-Detailed steps :
-
-\paragraph{ LVV-E3784 - Verify the time to retrieve results from a query of the prompt products
-database }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3784}{\textit{ LVV-E3784 } }
-test case in Jira.
-
-Verify that the maximum time allowed for retrieving results of a query
-of the Prompt Products Database is no more that l1QueryTime (10 seconds)
 
 \textbf{ Preconditions}:\\
 None
@@ -2220,62 +1891,6 @@ such as from AuxTel and ComCam.
 
 \textbf{ Preconditions}:\\
 None
-
-Final comment:\\None
-
-
-Detailed steps :
-
-\paragraph{ LVV-E3788 - Verify the number of precovery serivce connections }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3788}{\textit{ LVV-E3788 } }
-test case in Jira.
-
-Verify that the minimum number of precovery service connections that can
-be supported per hour is precoveryServePeakUsers
-
-\textbf{ Preconditions}:\\
-None
-
-Final comment:\\None
-
-
-Detailed steps :
-
-\paragraph{ LVV-E3789 - Verify implementation of Providing a Precovery Service }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3789}{\textit{ LVV-E3789 } }
-test case in Jira.
-
-Verify that a technical capability to perform user-directed precovery
-analyses on difference images exists and that it is exposed through the
-LSST Science Platform. ~Verified by testing against precursor
-datasets.\\
-(Involves: LSP Portal, MOPS and Forced Photometry)
-
-\textbf{ Preconditions}:\\
-\begin{enumerate}
-\tightlist
-\item
-  DECam HiTS data could be an appropriate set for this activity.
-\item
-  Precovery pipelines for follow-on to alert processing must exist and
-  be made available as a containerized version within the Science
-  Platform.
-\item
-  Determine limitations over which general precovery is supported. ~I
-  would suggest that precovery services be limited to current (or last
-  two) DRP campaigns with the possible addition of including non-DRP
-  products to encompass observations over the preceding year (does this
-  then require means to re-generate PVIs from Alert Production in
-  addition to DRP?)
-\item
-  Could re-use elements of
-  \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T80}{LVV-T80}
-  where quasars are used to test faint object detection.
-\end{enumerate}
 
 Final comment:\\None
 
@@ -2342,23 +1957,6 @@ document\textquotesingle s github repository as test\_LVV-T24.ipynb.
 
 Detailed steps :
 
-\paragraph{ LVV-E3793 - Verify implementation of Documenting Image Characterization }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3793}{\textit{ LVV-E3793 } }
-test case in Jira.
-
-Verify that the persisted format for Processed Visit Images and
-associated instrument-signature-removal data products is documented.
-
-\textbf{ Preconditions}:\\
-None
-
-Final comment:\\None
-
-
-Detailed steps :
-
 \paragraph{ LVV-E3794 - Verify implementation of Matching DIASources to Objects }\mbox{}\\
 
 Version \textbf{1.0(d)}.
@@ -2367,47 +1965,6 @@ test case in Jira.
 
 Verify that a cross-match table is available between DIASources and
 Objects.
-
-\textbf{ Preconditions}:\\
-None
-
-Final comment:\\None
-
-
-Detailed steps :
-
-\paragraph{ LVV-E3795 - Verify implementation of Special Programs Database }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3795}{\textit{ LVV-E3795 } }
-test case in Jira.
-
-To confirm that data products from Special Programs are based solely on
-images obtained as part of SP via, e.g., metadata queries. To confirm
-that the SP data products can be joined to Prompt and DRP products by
-attempting to do so via, e.g., coordinate table joins, and attempting to
-e.g., find the faint counterparts in a Deep Drilling stack to variables
-with no Object detections in the DRP coadds.
-
-\textbf{ Preconditions}:\\
-Databases created by reconfigured pipelines for processing Special
-Programs data (e.g., DIAObject/DIASource catalogs for a Deep Drilling
-Field).
-
-Final comment:\\None
-
-
-Detailed steps :
-
-\paragraph{ LVV-E3796 - Verify implementation of Characterizing Variability }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3796}{\textit{ LVV-E3796 } }
-test case in Jira.
-
-Verify that the variability characterization in the DIAObject catalog
-includes data collected within previous "diaCharacterizationCutoff"
-period of time.
 
 \textbf{ Preconditions}:\\
 None
@@ -2458,57 +2015,6 @@ Final comment:\\None
 
 Detailed steps :
 
-\paragraph{ LVV-E3799 - Verify implementation Level 1 and 2 Catalog Access }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3799}{\textit{ LVV-E3799 } }
-test case in Jira.
-
-Verify that Data Release Products are accessible by science users.
-
-\textbf{ Preconditions}:\\
-None
-
-Final comment:\\None
-
-
-Detailed steps :
-
-\paragraph{ LVV-E3800 - Verify implementation Level 1 Data Product Access }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3800}{\textit{ LVV-E3800 } }
-test case in Jira.
-
-Verify that Level 1 Data Products are accessible by science users.
-
-\textbf{ Preconditions}:\\
-None
-
-Final comment:\\None
-
-
-Detailed steps :
-
-\paragraph{ LVV-E3801 - Verify implementation of Regenerate Un-archived Data Products }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3801}{\textit{ LVV-E3801 } }
-test case in Jira.
-
-Not all of the ancillary data products produced by a data release will
-be archived permanently. ~These ancillary products have been promised as
-accessible to the community.~ Show that these products can be produced
-from an archived data release after the fact.
-
-\textbf{ Preconditions}:\\
-None
-
-Final comment:\\None
-
-
-Detailed steps :
-
 \paragraph{ LVV-E3802 - Verify implementation of Un-Archived Data Product Cache }\mbox{}\\
 
 Version \textbf{1.0(d)}.
@@ -2537,8 +2043,7 @@ test case in Jira.
 Show that the LSST software is capable of being executed in multiple
 contexts: single user instance, batch processing, continuous
 integration.\\
-Also show that the algorithms can be reconfigured and, if desired,
-completely replaced at run time.
+\strut \\
 
 \textbf{ Preconditions}:\\
 None
@@ -2615,67 +2120,14 @@ Final comment:\\None
 
 Detailed steps :
 
-\paragraph{ LVV-E3808 - Verify implementation of DIASource Precovery }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3808}{\textit{ LVV-E3808 } }
-test case in Jira.
-
-Verify that DMS performs forced photometry for new DIAObjects at all
-available images within the precoveryWindow.
-
-\textbf{ Preconditions}:\\
-None
-
-Final comment:\\None
-
-
-Detailed steps :
-
-\paragraph{ LVV-E3809 - Verify implementation of Level 1 Source Association }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3809}{\textit{ LVV-E3809 } }
-test case in Jira.
-
-Verify that the DMS associates DIASources into a DIAObject or SSObject.
-
-\textbf{ Preconditions}:\\
-None
-
-Final comment:\\Done for DP1 -\/- use DP1 dataset
-
-
-Detailed steps :
-
 \paragraph{ LVV-E3810 - Verify implementation of Level-1 Production Completeness }\mbox{}\\
 
 Version \textbf{1.0(d)}.
 Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3810}{\textit{ LVV-E3810 } }
 test case in Jira.
 
-Verify that the DMS successfully processes all images of sufficiently
-quality for processing are eventually processed even after connectivity
-failures.
-
-\textbf{ Preconditions}:\\
-None
-
-Final comment:\\None
-
-
-Detailed steps :
-
-\paragraph{ LVV-E3811 - Verify implementation of Fringe Correction Frame }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3811}{\textit{ LVV-E3811 } }
-test case in Jira.
-
-Verify that the DMS can produce an fringe-correction frame calibration
-product.\\
-Verify that the DMS can determine the effectiveness of the
-fringe-correction frame and determine how often it should be updated.
+Verify that the DMS successfully eventually processes all images of
+sufficient quality for processing, even after connectivity failures.
 
 \textbf{ Preconditions}:\\
 None
@@ -2697,7 +2149,8 @@ purposes.
 \textbf{ Preconditions}:\\
 None
 
-Final comment:\\None
+Final comment:\\This requirement is verified by inspection, as the multi-band coadds are
+not part of typical DRP processing, and are not persisted.
 
 
 Detailed steps :
@@ -2754,7 +2207,9 @@ proper motion and parallax, and a variability characterization.
 \textbf{ Preconditions}:\\
 None
 
-Final comment:\\None
+Final comment:\\Test executed at the USDF using commissioning data processed with
+pipelines version `w\_2025\_49`. The notebook corresponding to this test
+is attached to the document repo as â€‹"test\_LVV-T69.ipynb".
 
 
 Detailed steps :
@@ -2776,7 +2231,9 @@ Input Data\\
 DECam HiTS data (raw science images and master calibrations)\\
 HSC "RC2" data (raw science images and master calibrations)
 
-Final comment:\\None
+Final comment:\\Test executed at the USDF using pipelines version `w\_2026\_02`. The
+associated notebook from this test is attached to the report repository
+as "test\_LVV-T67.ipynb".
 
 
 Detailed steps :
@@ -2816,41 +2273,6 @@ Final comment:\\None
 
 Detailed steps :
 
-\paragraph{ LVV-E3819 - Verify radius considered nearby }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3819}{\textit{ LVV-E3819 } }
-test case in Jira.
-
-Verify that the radius within which an Object is considered to be near,
-and possibly coincident with, the DIASource is not greater that the
-maximum spcification of diaNearbyObjRadius = 6 arcsec.~
-
-\textbf{ Preconditions}:\\
-None
-
-Final comment:\\None
-
-
-Detailed steps :
-
-\paragraph{ LVV-E3820 - Verify maximum number of stars associated with a DIASource. }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3820}{\textit{ LVV-E3820 } }
-test case in Jira.
-
-Verify the maximum number of stars associated with a DIASource does not
-exceed the maximum of diaNearbyObjMaxStar=3
-
-\textbf{ Preconditions}:\\
-None
-
-Final comment:\\None
-
-
-Detailed steps :
-
 \paragraph{ LVV-E3821 - Verify implementation of DIAObject Catalog }\mbox{}\\
 
 Version \textbf{1.0(d)}.
@@ -2881,7 +2303,9 @@ with the required attributes.
 \textbf{ Preconditions}:\\
 None
 
-Final comment:\\None
+Final comment:\\Test executed on the RSP at USDF, using pipelines version w\_2025\_50.
+The executed notebook was saved in the repository associated with this
+campaign's test report as ``notebooks/test\_LVV-T49.ipynb."
 
 
 Detailed steps :
@@ -2953,44 +2377,6 @@ resources necessary to support end-user access to LSST Data Products.
 
 \textbf{ Preconditions}:\\
 None
-
-Final comment:\\None
-
-
-Detailed steps :
-
-\paragraph{ LVV-E3827 - Verify implementation of Archive to Data Access Center Network Secondary
-Link }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3827}{\textit{ LVV-E3827 } }
-test case in Jira.
-
-Verify the Archive to Data Access Center Network via Secondary Link by
-simulating a failure on the primary path and capacity on the secondary
-path.
-
-\textbf{ Preconditions}:\\
-\begin{enumerate}
-\tightlist
-\item
-  Data is staged in LDF and data transfer capabilities to US DAC and
-  Chilean DAC are in place, running on end node computers that are the
-  production hardware or equivalent to it.
-\item
-  As-built documentation for all of the above is available.
-\end{enumerate}
-
-NOTE: This test will be repeated at increasing data volumes as
-additional observatory capabilities (e.g. ComCAM, FullCam) become
-available. Final verification will be tested at full operational volume.
-After the initial test, the corresponding verification elements will be
-flagged as ``Requires Monitoring'' such that those requirements will be
-closed out as having been verified but will continue to be monitored
-throughout commissioning to ensure they do not drop out of compliance.
-This will also be monitored for end to end Summit - Data Facility
-transfers during Commissioning.\\
-\strut \\
 
 Final comment:\\None
 
@@ -3159,49 +2545,6 @@ Final comment:\\None
 
 Detailed steps :
 
-\paragraph{ LVV-E3832 - Verify implementation of Base to Archive Network Reliability }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3832}{\textit{ LVV-E3832 } }
-test case in Jira.
-
-Verify Base to Archive Network Reliability by demonstrating that the
-network can recover from outages within baseToArchNetMTTR =
-48{[}hour{]}.
-
-\textbf{ Preconditions}:\\
-\begin{enumerate}
-\tightlist
-\item
-  Archiver/Forwarders are configured at Base, connected to REUNA DWDM,
-  loaded with simulated or pre-cursor data, running on end node
-  computers that are the production hardware or equivalent to it.
-\item
-  Archiver/Forwarder receivers or other capability is on configured at
-  LDF, connected to Base - Archive Network, running on end node
-  computers that are the production hardware or equivalent to it.
-\item
-  At least 6 months of monitoring data for this link is available.
-\item
-  As-built documentation for all of the above is available.
-\end{enumerate}
-
-NOTE: This test will be repeated at increasing data volumes as
-additional observatory capabilities (e.g. ComCAM, FullCam) become
-available. Final verification will be tested at full operational volume.
-After the initial test, the corresponding verification elements will be
-flagged as ``Requires Monitoring'' such that those requirements will be
-closed out as having been verified but will continue to be monitored
-throughout commissioning to ensure they do not drop out of compliance.
-This will also be monitored for end to end Summit - Data Facility
-transfers during Commissioning.\\
-\strut \\
-
-Final comment:\\None
-
-
-Detailed steps :
-
 \paragraph{ LVV-E3833 - Verify implementation of Base to Archive Network Availability }\mbox{}\\
 
 Version \textbf{1.0(d)}.
@@ -3304,40 +2647,6 @@ and Indefeasible Rights.
   As-built documentation for all of the above contracts and IRUs is
   available.
 \end{enumerate}
-
-Final comment:\\None
-
-
-Detailed steps :
-
-\paragraph{ LVV-E3836 - Verify implementation of Summit to Base Network Secondary Link }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3836}{\textit{ LVV-E3836 } }
-test case in Jira.
-
-Verify automated fail-over from primary to secondary equipment in Rubin
-Observatory DWDM on simulated failure of primary. ~Verify bandwidth
-sufficiency on secondary. ~Verify automated recovery to primary
-equipment on simulated restoration of primary. ~Repeat for failure of
-Rubin Observatory fiber and fail-over to AURA fiber and DWDM.
-~Demonstrate use of secondary in "catch-up" mode.
-
-\textbf{ Preconditions}:\\
-\begin{enumerate}
-\tightlist
-\item
-  PMCS DMTC-7400-2400 complete.
-\item
-  As-built documentation for Summit - Base Network is available.
-\end{enumerate}
-
-NOTE: After the initial test, the corresponding verification elements
-will be flagged as ``Requires Monitoring'' such that those requirements
-will be closed out as having been verified but will continue to be
-monitored throughout commissioning to ensure they do not drop out of
-compliance. This will also be monitored for end to end Summit - Data
-Facility transfers during Commissioning.
 
 Final comment:\\None
 
@@ -3524,7 +2833,7 @@ test case in Jira.
 
 Specification: The infrastructure will be sized such that the net
 throughput of the data processing pipelines will permit a complete
-processing of a night's observing data prior to the start of the next
+processing of a nightâ€™s observing data prior to the start of the next
 observing night, assuming no system outages.\\
 \strut \\
 Demonstrate that the Alert Production Pipeline is capable of processing
@@ -3618,7 +2927,10 @@ needed to exactly produce that coadd.
 \textbf{ Preconditions}:\\
 None
 
-Final comment:\\None
+Final comment:\\Executed at the USDF using pipelines version `w\_2026\_13`. The script
+that was executed for this test, and its output log, are attached to
+this document\textquotesingle s repo as "test\_LVV-T64.py" and
+"test\_LVV-T64.log".
 
 
 Detailed steps :
@@ -3709,23 +3021,6 @@ Final comment:\\None
 
 Detailed steps :
 
-\paragraph{ LVV-E3853 - Verify implementation of Keep Historical Alert Archive }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3853}{\textit{ LVV-E3853 } }
-test case in Jira.
-
-Verify that the DMS preserves and makes accessible an Alert Archive for
-reference and for false alert analyses
-
-\textbf{ Preconditions}:\\
-None
-
-Final comment:\\None
-
-
-Detailed steps :
-
 \paragraph{ LVV-E3854 - Verify implementation of Maintain Archive Publicly Accessible }\mbox{}\\
 
 Version \textbf{1.0(d)}.
@@ -3787,25 +3082,6 @@ Final comment:\\None
 
 Detailed steps :
 
-\paragraph{ LVV-E3857 - Verify implementation of Monochromatic Flatfield Data Cube }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3857}{\textit{ LVV-E3857 } }
-test case in Jira.
-
-Verify that the DMS can generate a calibration image/cube that corrects
-for pixel-to-pixel wavelength-dependent detector response.\\
-Verify that the DMS can measure the effectiveness of this monochromatic
-flatfield data cube.
-
-\textbf{ Preconditions}:\\
-None
-
-Final comment:\\None
-
-
-Detailed steps :
-
 \paragraph{ LVV-E3858 - Verify implementation of Illumination Correction Frame }\mbox{}\\
 
 Version \textbf{1.0(d)}.
@@ -3853,40 +3129,9 @@ DIAObjects.
 \textbf{ Preconditions}:\\
 None
 
-Final comment:\\None
-
-
-Detailed steps :
-
-\paragraph{ LVV-E3861 - Verify implementation of Associate Sources to Objects }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3861}{\textit{ LVV-E3861 } }
-test case in Jira.
-
-Verify that each Source record contains an ID that associates it with a
-best guess at the Object it corresponds to.
-
-\textbf{ Preconditions}:\\
-None
-
-Final comment:\\None
-
-
-Detailed steps :
-
-\paragraph{ LVV-E3862 - Verify implementation of Image Differencing with coadd templates }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3862}{\textit{ LVV-E3862 } }
-test case in Jira.
-
-Verify that the DMS can perform image differencing from coadds.
-
-\textbf{ Preconditions}:\\
-None
-
-Final comment:\\None
+Final comment:\\Test executed at the USDF with pipelines version `w\_2025\_50`. The
+notebook is attached to this report\textquotesingle s github repo as
+"test\_LVV-T128.ipynb".
 
 
 Detailed steps :
@@ -3916,86 +3161,6 @@ Final comment:\\None
 
 Detailed steps :
 
-\paragraph{ LVV-E3864 - Verify implementation of Solar System Objects Available Within Specified
-Time }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3864}{\textit{ LVV-E3864 } }
-test case in Jira.
-
-Execute single-day operations rehearsal, observe that data products for
-Solar System Objects are generated in time
-
-\textbf{ Preconditions}:\\
-None
-
-Final comment:\\None
-
-
-Detailed steps :
-
-\paragraph{ LVV-E3865 - Verify implementation of latency of reporting optical transients }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3865}{\textit{ LVV-E3865 } }
-test case in Jira.
-
-Verify that alerts are generated for optical transients
-within~\textbf{OTT1 = 1 minute~}of the completion of the readout of the
-last image.
-
-\textbf{ Preconditions}:\\
-None
-
-Final comment:\\None
-
-
-Detailed steps :
-
-\paragraph{ LVV-E3866 - Verify implementation of Nightly Data Accessible Within 24 hrs }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3866}{\textit{ LVV-E3866 } }
-test case in Jira.
-
-\textbf{Test Items}\\
-\strut \\
-Verify that\\
-1. Alerts are available within OTT1\\
-2. Level 1 Data Products are available within L1PublicT\\
-3. Solar System Object orbits are available within L1PublicT of the
-updated calculations completion on the following night.
-
-\textbf{ Preconditions}:\\
-None
-
-Final comment:\\None
-
-
-Detailed steps :
-
-\paragraph{ LVV-E3867 - Verify implementation of Constraints on Level 1 Special Program Products
-Generation }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3867}{\textit{ LVV-E3867 } }
-test case in Jira.
-
-Execute single-day operations rehearsal. Observe Prompt Processing data
-products generated in time. Confirm that data from Special Programs is
-processed with the same latency as required for main survey data:
-release of public data within L1publicT and Alerts within OTT1.
-
-\textbf{ Preconditions}:\\
-Data from a Special Program that is appropriate for the Prompt pipeline
-(i.e., a Deep Drilling type series of standard visits from a non-crowded
-field).
-
-Final comment:\\None
-
-
-Detailed steps :
-
 \paragraph{ LVV-E3868 - Verify implementation of Transient Alert Distribution }\mbox{}\\
 
 Version \textbf{1.0(d)}.
@@ -4013,63 +3178,6 @@ Final comment:\\None
 
 Detailed steps :
 
-\paragraph{ LVV-E3869 - Verify Level 1 data product availability for transient alerts }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3869}{\textit{ LVV-E3869 } }
-test case in Jira.
-
-Verify that at least \textbf{OTR1 = 98{[}percent{]}~}of alerts are
-distributed via the LSST alert distribution system within time
-\textbf{OTT1 = 1{[}minute{]}~}from the conclusion of the
-camera\textquotesingle s readout of the raw exposures used to generate
-each alert.
-
-\textbf{ Preconditions}:\\
-None
-
-Final comment:\\None
-
-
-Detailed steps :
-
-\paragraph{ LVV-E3870 - Verify Level 1 solar system objects data product availability }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3870}{\textit{ LVV-E3870 } }
-test case in Jira.
-
-Verify that Solar System Objects are made publicly available within
-\textbf{L1PublicT = 24{[}hour{]}~}of successful moving source linkage
-and orbit computation.
-
-\textbf{ Preconditions}:\\
-None
-
-Final comment:\\None
-
-
-Detailed steps :
-
-\paragraph{ LVV-E3871 - Verify Level 1 data product pixel data embargo in operations }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3871}{\textit{ LVV-E3871 } }
-test case in Jira.
-
-Verify that Rubin Observatory pixel data is held in a secure location
-and not released to the consortium prior to \textbf{L1EmbargoTMin =
-80{[}hour{]}~}and no later than \textbf{L1EmbargoT = 81{[}hour{]}~}after
-data acquisition during the Operations phase.
-
-\textbf{ Preconditions}:\\
-None
-
-Final comment:\\None
-
-
-Detailed steps :
-
 \paragraph{ LVV-E3872 - Verify secure data transfer from summit to archive }\mbox{}\\
 
 Version \textbf{1.0(d)}.
@@ -4078,24 +3186,6 @@ test case in Jira.
 
 Verify that the data transfer from the summit to the USDF complies with
 funding agency requirements for cyber security.
-
-\textbf{ Preconditions}:\\
-None
-
-Final comment:\\None
-
-
-Detailed steps :
-
-\paragraph{ LVV-E3873 - Verify implementation of secure data storage }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E3873}{\textit{ LVV-E3873 } }
-test case in Jira.
-
-Verify that the DMS stores image data in encrypted storage under secure
-conditions with limited access to authorized staff during the period of
-\textbf{L1EmbargoTmin=80{[}hour{]}}.
 
 \textbf{ Preconditions}:\\
 None
@@ -4243,62 +3333,6 @@ Final comment:\\None
 
 Detailed steps :
 
-\paragraph{ LVV-E4049 - Verify implementation of Level 1 Data Product embargo time }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E4049}{\textit{ LVV-E4049 } }
-test case in Jira.
-
-Verify that Rubin Observatory visit image data is not released in any
-form other than the contents of the public alert stream prior to
-\textbf{L1EmbargoTMin = 80{[}hour{]}} after acquisition of the raw
-image.
-
-\textbf{ Preconditions}:\\
-None
-
-Final comment:\\None
-
-
-Detailed steps :
-
-\paragraph{ LVV-E4050 - Verify implementation of Generate Data Quality Report Within Specified
-Time }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E4050}{\textit{ LVV-E4050 } }
-test case in Jira.
-
-Verify that the DMS can generate a nightly L1 Data Quality Report within
-\textbf{dqReportComplTime = 4{[}hour{]}}, in both human- and
-machine-readable formats.
-
-\textbf{ Preconditions}:\\
-None
-
-Final comment:\\None
-
-
-Detailed steps :
-
-\paragraph{ LVV-E4051 - Verify implementation of Prompt Processing Calibration Report Definition }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E4051}{\textit{ LVV-E4051 } }
-test case in Jira.
-
-Verify that the DMS produces a Prompt Processing Calibration Report.
-~Specifically check that this report is capable of identifying when
-aspects of the telescope or camera are changing with time.
-
-\textbf{ Preconditions}:\\
-None
-
-Final comment:\\None
-
-
-Detailed steps :
-
 \paragraph{ LVV-E4052 - Verify implementation of Archive Center Disaster Recovery }\mbox{}\\
 
 Version \textbf{1.0(d)}.
@@ -4322,49 +3356,6 @@ Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassi
 test case in Jira.
 
 Verify that raw images are reliably archived.
-
-\textbf{ Preconditions}:\\
-None
-
-Final comment:\\None
-
-
-Detailed steps :
-
-\paragraph{ LVV-E4054 - Verify implementation of minimum number of simultaneous DM EFD query
-users }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E4054}{\textit{ LVV-E4054 } }
-test case in Jira.
-
-Verify that the DM EFD can support \textbf{dmEfdQueryUsers~= 5}
-simultaneous queries. The additional requirement that each query must
-last no more than \textbf{dmEfdQueryTime = 10 seconds~}will be verified
-separately in
-\href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1251}{LVV-T1251},
-but these must be satisfied together.
-
-\textbf{ Preconditions}:\\
-None
-
-Final comment:\\None
-
-
-Detailed steps :
-
-\paragraph{ LVV-E4055 - Verify implementation of maximum time to retrieve DM EFD query results }\mbox{}\\
-
-Version \textbf{1.0(d)}.
-Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E4055}{\textit{ LVV-E4055 } }
-test case in Jira.
-
-Verify that the DM EFD can support \textbf{dmEfdQueryUsers~= 5}
-simultaneous queries, with each query must executing in no more than
-\textbf{dmEfdQueryTime = 10 seconds.~}The requirement on at least 5
-simultaneous queries will be verified separately in
-\href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1250}{LVV-T1250},\href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1251}{}
-but these must be satisfied together.
 
 \textbf{ Preconditions}:\\
 None
@@ -4555,6 +3546,25 @@ Final comment:\\Test performed using DRP processing of LSSTComCam data from Data
 containing absolute flux standards in all passbands. The notebook where
 calculations were performed is attached to this Report\textquotesingle s
 git repository as test\_LVV-T1845.ipynb.
+
+
+Detailed steps :
+
+\paragraph{ LVV-E4070 - Verify implementation of Image Differencing with single-exposure
+templates }\mbox{}\\
+
+Version \textbf{1.0(d)}.
+Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#!/v2/testCase/LVV-E4070}{\textit{ LVV-E4070 } }
+test case in Jira.
+
+Verify that the DMS can perform image differencing from single
+exposures.
+
+\textbf{ Preconditions}:\\
+None
+
+Final comment:\\Results are in the notebook "test\_LVV-T3177.ipynb" attached to this
+test repository.
 
 
 Detailed steps :
