@@ -1,6 +1,6 @@
 % generated from JIRA project LVV
-% using template at /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/docsteady/templates/tpr.latex.jinja2.
-% using docsteady version 3.1.4.dev1+g0f28ee970.d20251104
+% using template at /Users/womullan/LSSTgit/docsteady/src/docsteady/templates/tpr.latex.jinja2.
+% using docsteady version 0.0.0
 % Please do not edit -- update information in Jira instead
 \documentclass[DM,lsstdraft,STR,toc]{lsstdoc}
 \usepackage{geometry}
@@ -38,7 +38,7 @@
 
 \title{LVV-P128: LDM-503-19 (All P1a and 1b DM requirements verified) Test Plan and Report}
 \setDocRef{\lsstDocType-\lsstDocNum}
-\date{ 2026-08-07 }
+\date{ 2026-08-18 }
 \author{ Jeffrey Carlin }
 
 \input{history_and_info.tex}
@@ -1604,7 +1604,7 @@ campaign's test report as ``notebooks/test\_LVV-T73.ipynb."
 \smallskip
 Test executed at the USDF using commissioning data processed with
 pipelines version `w\_2025\_49`. The notebook corresponding to this test
-is attached to the document repo as â€‹"test\_LVV-T69.ipynb".
+is attached to the document repo as \hspace{0pt}"test\_LVV-T69.ipynb".
 \medskip
 \end{minipage}
 &
@@ -3704,11 +3704,10 @@ None
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-By \hspace{0pt}\hspace{0pt}\hspace{0pt}\hspace{0pt}\hspace{0pt}design
-the data model is captured and controlled in SDM Schemas as described in
-https://dmtn-153.lsst.io/ . ~ This is in use for all data and allows
-migration/control of data sets. For example see also
-https://dmtn-227.lsst.io/\#making-the-schema,
+By ‚Äč‚Äč‚Äč‚Äč‚Äčdesign the data model is captured and controlled in
+SDM Schemas as described in https://dmtn-153.lsst.io/ . ~ This is in use
+for all data and allows migration/control of data sets. For example see
+also https://dmtn-227.lsst.io/\#making-the-schema,
 ~https://dmtn-170.lsst.io/, https://sqr-107.lsst.io/\#abstract
 
 
@@ -3870,9 +3869,8 @@ None
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-The outputs of the \hspace{0pt}"Ex" ellipticity \hspace{0pt}residuals
-task are \hspace{0pt}stored in the `visit\_table` dataset. Load this
-table:\\
+The outputs of the ‚Äã"Ex" ellipticity ‚Äãresiduals task are ‚Äãstored
+in the `visit\_table` dataset. Load this table:\\
 \strut \\
 visitTable = butler.get("visit\_table", instrument="LSSTCam")
 
@@ -4073,9 +4071,8 @@ None
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-The outputs of the \hspace{0pt}"Ex" ellipticity \hspace{0pt}residuals
-task are \hspace{0pt}stored in the `visit\_table` dataset. Load this
-table:\\
+The outputs of the ‚Äã"Ex" ellipticity ‚Äãresiduals task are ‚Äãstored
+in the `visit\_table` dataset. Load this table:\\
 \strut \\
 visitTable = butler.get("visit\_table", instrument="LSSTCam")
 
@@ -4208,9 +4205,8 @@ None
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-The outputs of the \hspace{0pt}"Ex" ellipticity \hspace{0pt}residuals
-task are \hspace{0pt}stored in the `visit\_table` dataset. Load this
-table:\\
+The outputs of the ‚Äã"Ex" ellipticity ‚Äãresiduals task are ‚Äãstored
+in the `visit\_table` dataset. Load this table:\\
 \strut \\
 visitTable = butler.get("visit\_table", instrument="LSSTCam")
 
@@ -5159,7 +5155,7 @@ Step LVV-E3805-3 & Step Execution Status: \textbf{ Pass } \\ \hline
  Description \\
 {\footnotesize
 Inspect the logs and metrics and monitoring dashboards that demonstrate
-â€‹ data transfers using the bulk data transfer service
+\hspace{0pt} data transfers using the bulk data transfer service
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
@@ -5613,7 +5609,7 @@ proper motion and parallax, and a variability characterization.
 Execution status: {\bf Initial Pass }\\
 Final comment:\\Test executed at the USDF using commissioning data processed with
 pipelines version `w\_2025\_49`. The notebook corresponding to this test
-is attached to the document repo as â€‹"test\_LVV-T69.ipynb".
+is attached to the document repo as \hspace{0pt}"test\_LVV-T69.ipynb".
 
 
 
@@ -6114,7 +6110,7 @@ Butler repo available for reading.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-We use the same repo/collection as in â€‹step 3:\\
+We use the same repo/collection as in \hspace{0pt}step 3:\\
 butler = Butler(\textquotesingle dp2\_prep\textquotesingle,
 collections={[}\textquotesingle LSSTCam/runs/DRP/20250417\_20250921/w\_2025\_49/DM-53545\textquotesingle{]})
 
@@ -7948,7 +7944,7 @@ sizing model for construction and operations. As stated in that
 document:\\
 \strut \\
 "Annual DRP execution starts at the beginning of LSST Operations Year 2
-with the processing for DR2. The hardware for each yearâ€™s processing
+with the processing for DR2. The hardware for each year's processing
 must be purchased and ready for use at the beginning of the year, so it
 is allocated in the tables to the prior fiscal year, when the images for
 that processing were taken."\\
@@ -7967,7 +7963,7 @@ test case in Jira.
 
 Specification: The infrastructure will be sized such that the net
 throughput of the data processing pipelines will permit a complete
-processing of a nightâ€™s observing data prior to the start of the next
+processing of a night's observing data prior to the start of the next
 observing night, assuming no system outages.\\
 \strut \\
 Demonstrate that the Alert Production Pipeline is capable of processing
@@ -8924,20 +8920,45 @@ they are reported in the Object and DIAObject tables.
 \paragraph{ LVV-T171 - Verify Pipeline Availability }\mbox{}\\
 
 Version \textbf{1.0(d)}.
-Status \textbf{Defined}.
+Status \textbf{Approved}.
 Open  \href{https://rubinobs.atlassian.net/projects/LVV?selectedItem=com.atlassian.plugins.atlassian-connect-plugin:com.kanoah.test-manager__main-project-page\#\!/v2/testCase/LVV-T171}{\textit{ LVV-T171 } }
 test case in Jira.
 
 Demonstrate that Data Management System pipelines are available for use
-without disruptions of greater than productionMaxDowntime (24 hours). ~
+without disruptions of greater than productionMaxDowntime (24 hours).
+~~\\
 This requires a regimented change control process and testing
 infrastructure for all pipelines and their underlying software services,
 and regimented management and monitoring of compute and networking
-resources. ~The list of services covered by this test include: Image and
-EFD Archiving, Prompt Processing, OCS Driven Batch, Telemetry Gateway,
-Alert Distribution, Alert Filtering, Batch Production, Data Backbone,
-Compute/Storage/LAN, Inter-Site Networks, and Service Management and
-Monitoring.
+resources. ~\\
+\strut \\
+The list of services covered by this test include:~
+
+\begin{itemize}
+\tightlist
+\item
+  Image and EFD Archiving,~
+\item
+  Prompt Processing,~
+\item
+  OCS Driven Batch,~
+\item
+  Telemetry Gateway,~
+\item
+  Alert Distribution,~
+\item
+  Alert Filtering,~
+\item
+  Batch Production,~
+\item
+  Data Backbone,~
+\item
+  Compute/Storage/LAN,~
+\item
+  Inter-Site Networks, and~
+\item
+  Service Management and Monitoring.
+\end{itemize}
 
 \textbf{ Preconditions}:\\ None
 
@@ -10867,8 +10888,8 @@ Step LVV-E4070-2 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
-\hspace{0pt}Select a single visit+detector image, and re-run template
-creation and \hspace{0pt}difference imaging for that image. Specify~
+窶鬼elect a single visit+detector image, and re-run template creation
+and 窶掬ifference imaging for that image. Specify~
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
